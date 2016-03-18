@@ -1,0 +1,24 @@
+// NB: not pure json, comments & some trailing commas are allowed :)
+{
+    "theme": "theme-paris1-2016",
+    "plugins": ["delegateAuth", "paris1-tchat"],
+    "cas_base_url": "https://cas-test.univ-paris1.fr/cas",
+    "uportal_base_url": "https://esup-test.univ-paris1.fr",
+    "prolongationENT_url": "https://ent-test.univ-paris1.fr/ProlongationENT",
+    "esupUserApps_url": "https://ent-test.univ-paris1.fr/EsupUserApps",
+
+    "time_before_checking_browser_cache_is_up_to_date": 60,
+
+    // disabling localStorage will cause late appearing of the prolongationENT => blinks in the browser
+    "disableLocalStorage": false,
+    // do disable server cache in production, 
+    "disableServerCache": true,
+    // to debug theme CSS in browser, it's easier to load directly the CSS
+    "disableCSSInlining": false,
+    
+    "cas_impersonate": {
+        "cookie_name": "CAS_TEST_IMPERSONATE",
+        "cookie_domain": "univ-paris1.fr",
+    },
+
+}
