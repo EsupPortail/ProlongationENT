@@ -9,41 +9,10 @@ import java.util.Set;
 
 class Conf {
 
-static class Auth {
-    Ldap.LdapConf ldap;
-}
-
-// NB: we would want Conf.Main extends Conf.Apps, Conf.Auth.
-// be we can't do it in java, so we cheat!
-static class Apps extends Conf.Auth {
-    Map<String, Map<String, Object>> GROUPS = new HashMap<>();
-    Map<String, App> APPS = new HashMap<>();
-    Map<String, App> APPS_ATTRS;
-    Map<String, List<String>> LAYOUT;
-    Map<String,String> url_vars;
-    
-    Conf.Apps init() {
-        for (App app : APPS.values()) {
-            if (app.inherit != null) {
-                for (String base: app.inherit) {
-                    App baseApp = APPS_ATTRS.get(base);
-                    if (baseApp == null) throw new RuntimeException("invalid inherit " + base + " in app " + app.title);
-                    app.merge(baseApp);
-                }
-            }
-            app.init(url_vars);
-        }
-        return this;
-    }
-}
-
-static class Main extends Conf.Apps {
-    Set<String> admins = new HashSet<>();
+static class Main {
     String cas_base_url;
     String uportal_base_url;
     String layout_url;
-    String current_idpId;
-    String current_idpAuthnRequest_url;
     String theme = "theme-simple";
     List<String> plugins = new ArrayList<>();
 
@@ -56,8 +25,6 @@ static class Main extends Conf.Apps {
     }
     Themes themes = new Themes();
 
-    Set<String> wanted_user_attributes;
-    int visit_max_inactive = 1800; // 30 min
     int time_before_checking_browser_cache_is_up_to_date = 60;
 
     static class Cas_impersonate {
@@ -65,12 +32,7 @@ static class Main extends Conf.Apps {
         String cookie_domain;
     };
     Cas_impersonate cas_impersonate;
-
-    Shibboleth.Conf shibboleth;
-
-    TopAppsAgimus.GlobalConf topApps;
     
-    boolean isCasSingleSignOutWorking;
     boolean disableLocalStorage;
     boolean disableServerCache;
     boolean disableCSSInlining;
@@ -89,19 +51,6 @@ static class Main extends Conf.Apps {
         if (layout_url == null) layout_url = prolongationENT_url + "/layout";
         if (ent_logout_url == null) ent_logout_url = Utils.via_CAS(cas_logout_url, uportal_base_url + "/Logout"); // nb: esup logout may not logout of CAS if user was not logged in esup portail, so forcing CAS logout in case
         return this;
-    }
-
-    void merge(Conf.Apps conf) {
-        GROUPS = conf.GROUPS;
-        APPS = conf.APPS;
-        LAYOUT = conf.LAYOUT;
-    }
-    void merge(Conf.Auth conf) {
-        ldap = conf.ldap;
-    }    
-    void merge(Shibboleth.Conf conf) {
-        if (conf.federation_metadata_url != null)
-            shibboleth = conf;
     }
 }
 
