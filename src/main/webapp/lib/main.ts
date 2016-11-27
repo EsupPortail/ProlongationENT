@@ -254,7 +254,6 @@ function mayUpdate() {
         } else if (CONF.esupUserApps_url) {
             // if user used "reload", the cached version of detectReload will change
             pE.detectReload = detectReload;
-            args['detectReload'] = detectReload; // needed for migration
             h.loadScript(CONF.esupUserApps_url + "/detectReload");
         }
     }
