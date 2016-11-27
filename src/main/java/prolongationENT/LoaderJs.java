@@ -38,7 +38,7 @@ public class LoaderJs {
             } else {
                 // redirect to versioned loader.js which has long cache time
                 setCacheControlMaxAge(response, one_hour);
-                response.sendRedirect(conf.prolongationENT_url + "/loader.js?v=" + jsHash);
+                response.sendRedirect("loader.js?v=" + jsHash);
             }
         } else {
             int one_year = 60 * 60 * 24 * 365;
