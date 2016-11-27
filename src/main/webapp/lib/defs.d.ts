@@ -28,6 +28,7 @@ interface PARAMS {
 
 interface CONF {
   theme: string;
+  esupUserApps_url: string;
   prolongationENT_url: string;
   uportal_base_url: string;
   cas_login_url: string;
