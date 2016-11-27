@@ -94,7 +94,11 @@ function simulateClickElt(elt) {
 function asyncLogout() {
     removeSessionStorageCache();
     if (CONF.cas_impersonate) h.removeCookie(CONF.cas_impersonate.cookie_name, CONF.cas_impersonate.cookie_domain, '/');
-    h.loadScript(CONF.esupUserApps_url + '/logout', [ 'callback=window.prolongation_ENT.onAsyncLogout' ]);
+    if (CONF.esupUserApps_url) {
+        h.loadScript(CONF.esupUserApps_url + '/logout', [ 'callback=window.prolongation_ENT.onAsyncLogout' ]);
+    } else {
+        pE.onAsyncLogout();
+    }
     return false;
 }
 pE.onAsyncLogout = function() {
@@ -247,7 +251,7 @@ function mayUpdate() {
             h.mylog("cached bandeau is old (" + age + "s), updating it softly");
             sessionStorageSet(currentApp.fname + ":time", h.now()); // the new bandeau will update "time", but only if bandeau has changed!
             loadBandeauJs([]);
-        } else {
+        } else if (CONF.esupUserApps_url) {
             // if user used "reload", the cached version of detectReload will change
             pE.detectReload = detectReload;
             args['detectReload'] = detectReload; // needed for migration
