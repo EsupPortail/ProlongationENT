@@ -24,8 +24,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+
 
 class Utils {
     
@@ -41,12 +41,12 @@ class Utils {
         }
     }
 
-    private static Log log() {
+    private static Logger log() {
         return log(Utils.class);
     }
     
-    static Log log(Class<?> clazz) {
-        return LogFactory.getLog(clazz);
+    static Logger log(Class<?> clazz) {
+        return org.slf4j.LoggerFactory.getLogger(clazz);
     }
     
     static String via_CAS(String cas_login_url, String href) {
@@ -158,7 +158,7 @@ class Utils {
             try {
                 map.put(name, getField(o.getClass(), name).get(o));
             } catch (NoSuchFieldException | IllegalAccessException e) {
-                log().error(e);
+                log().error("error accessing field " + name, e);
             }
         }
         return map;

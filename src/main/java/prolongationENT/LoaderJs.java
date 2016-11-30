@@ -5,7 +5,7 @@ import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import org.apache.commons.logging.LogFactory;
+
 
 import static prolongationENT.Utils.*;
 
@@ -14,7 +14,7 @@ public class LoaderJs {
     String js;
     String jsHash;
     
-    org.apache.commons.logging.Log log = LogFactory.getLog(LoaderJs.class);
+    org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(LoaderJs.class);
 
     public LoaderJs(HttpServletRequest request, Conf.Main conf) {
         this.conf = conf;

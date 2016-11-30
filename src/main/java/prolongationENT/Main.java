@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 
-import org.apache.commons.logging.LogFactory;
+
 
 import static prolongationENT.Utils.*;
 
@@ -19,7 +19,7 @@ public class Main extends HttpServlet {
     Conf.Main conf = null;
     LoaderJs loaderJs;
     
-    org.apache.commons.logging.Log log = LogFactory.getLog(Main.class);
+    org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(Main.class);
 
     static String[] mappings = new String[] {
         "/loader.js", "/purgeCache", "/log",
