@@ -13,8 +13,6 @@ public class WebXml implements ServletContextListener {
     }
 
     private void configure(ServletContext sc) {
-        Conf.Main conf = Main.getConf(sc);
-                
         addServlet(sc, "ProlongationENT", Main.class, null, Main.mappings);
     }
 }
