@@ -51,7 +51,7 @@
         function elt() {
             return _elt || (_elt = document.getElementById("pE-tchat"));
         }
-        var is_fixed = window.innerHeight < document.body.scrollHeight;
+        var is_fixed = args.force_fixed_tchat || window.innerHeight < document.body.scrollHeight;
 
         function check(e) {
             if (!elt()) return;
@@ -65,6 +65,7 @@
         }
         var check_ = debounce(check, 20);
         setTimeout(function () {
+            if (args.force_fixed_tchat) return;
             window.addEventListener('scroll', check_);
             window.addEventListener('resize', check_);
             if (window.MutationObserver) {
