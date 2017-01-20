@@ -105,7 +105,7 @@
             appTitle: appTitle,
             topApps: topApps,
             accueilUrl: (pE.validApps["caccueil"] || pE.validApps["accueil-federation"] || {}).url,
-            photoUrl: "https://userphoto.univ-paris1.fr/?uid=" + pE.DATA.user + (photo_version ? "&v=" + photo_version : ''),
+            photoUrl: "https://userphoto-test.univ-paris1.fr/?cas-test&ldap-test&uid=" + pE.DATA.user + (photo_version ? "&v=" + photo_version : ''),
             themeUrl: themeUrl(),
             logout_url: pE.CONF.ent_logout_url,
             userDetails: pE.personAttr("displayName") || pE.personAttr("mail"),
