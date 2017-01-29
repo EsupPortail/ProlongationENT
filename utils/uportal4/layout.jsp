@@ -20,6 +20,7 @@ String urlencode(String s) throws Exception {
 }
 
 %><% 
+String layout_json_url = "/layout.json"; // replace with "/api/v1/dlm/layout.json" on uPortal 4.3+
 String callback = request.getParameter("callback");
 String user = request.getRemoteUser();
 if ((user == null || user.equals("guest")) && request.getParameter("auth_checked") == null) {
@@ -36,7 +37,7 @@ if ((user == null || user.equals("guest")) && request.getParameter("auth_checked
         out.print(callback + "(");
         out.flush();
     }
-    request.getRequestDispatcher("/layout.json").include(request, response);
+    request.getRequestDispatcher(layout_json_url).include(request, response);
     if (callback != null) out.println(")");
 }
 
