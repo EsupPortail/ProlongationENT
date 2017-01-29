@@ -39,4 +39,5 @@ window.prolongation_ENT.main({
         ],
     },
     "user": "fbar",
+    "topApps": [],
 })
