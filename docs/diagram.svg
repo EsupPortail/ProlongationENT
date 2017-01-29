@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="41cm" height="19cm" viewBox="-581 -14 817 361" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #ff0000" cx="-55.0941" cy="283.468" rx="138.526" ry="60.8283"/>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-55.0941" y="292.029">
+      <tspan x="-55.0941" y="292.029">ProlongationENT</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #00ff00" cx="-447.108" cy="47.0454" rx="131.4" ry="58.8084"/>
+    <text font-size="33.8667" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-447.108" y="57.2788">
+      <tspan x="-447.108" y="57.2788">CAS &amp; LDAP</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-283.554" y="117.401">
+    <tspan x="-283.554" y="117.401"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-283.554" y="117.401">
+    <tspan x="-283.554" y="117.401"></tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-365.987" y1="248.23" x2="-326.921" y2="248.23"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-365.987" y1="314.563" x2="-326.921" y2="314.563"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -365.987,248.23 A 33.1667,33.1667 0 0 0 -399.154,281.397"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -293.754,281.397 A 33.1667,33.1667 0 0 0 -326.921,248.23"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-399.154" y1="281.397" x2="-399.154" y2="281.397"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-293.754" y1="281.397" x2="-293.754" y2="281.397"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -399.154,281.397 A 33.1667,33.1667 0 0 0 -365.987,314.563"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -326.921,314.563 A 33.1667,33.1667 0 0 0 -293.754,281.397"/>
+    <text font-size="33.8667" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-346.454" y="291.63">
+      <tspan x="-346.454" y="291.63">apps</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-421.678" y1="106.637" x2="-364.648" y2="239.291"/>
+    <polygon style="fill: #000000" points="-361.685,246.181 -370.229,238.969 -364.648,239.291 -361.042,235.02 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-361.685,246.181 -370.229,238.969 -364.648,239.291 -361.042,235.02 "/>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #00ff00" cx="40.4951" cy="45.3119" rx="193.031" ry="56.8718"/>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="40.4951" y="53.873">
+      <tspan x="40.4951" y="53.873">EsupUserApps / uPortal</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-8.67365" y1="1.4266" x2="63.5365" y2="1.4266"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-8.67365" y1="38.3665" x2="63.5365" y2="38.3665"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -8.67365,1.4266 A 18.4699,18.4699 0 0 0 -27.1436,19.8965"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M 82.0064,19.8965 A 18.4699,18.4699 0 0 0 63.5365,1.4266"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-27.1436" y1="19.8965" x2="-27.1436" y2="19.8965"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="82.0064" y1="19.8965" x2="82.0064" y2="19.8965"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -27.1436,19.8965 A 18.4699,18.4699 0 0 0 -8.67365,38.3665"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M 63.5365,38.3665 A 18.4699,18.4699 0 0 0 82.0064,19.8965"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="27.4314" y="26.7854">
+      <tspan x="27.4314" y="26.7854">channels</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x="49.7056" y="49.7268" width="96.05" height="43.2778"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="97.7306" y="78.2546">
+      <tspan x="97.7306" y="78.2546">layout</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x="-132.007" y="239.956" width="62.8" height="29.1667"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-100.607" y="259.706">
+      <tspan x="-100.607" y="259.706">theme</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x="-54.2838" y="299.788" width="56.45" height="29.1667"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-26.0588" y="319.538">
+      <tspan x="-26.0588" y="319.538">menu</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="17.082" y1="103.645" x2="-28.6384" y2="217.555"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-30.3866,208.487 -29.4713,219.63 -21.1062,212.212 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-313.712" y1="46.5712" x2="-158.986" y2="46.0211"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-166.732,51.0486 -156.75,46.0131 -166.767,41.0487 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-195.599" y1="282.469" x2="-289.308" y2="281.803"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-281.509,276.858 -291.544,281.787 -281.58,286.858 "/>
+  </g>
+</svg>

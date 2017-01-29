@@ -3,25 +3,61 @@ ProlongationENT
 
 Web widget prolonging uportal/ENT into apps
 
+* [Introduction](#introduction)
+* [Configuration](#configuration)
+* [Application integration](#application-integration)
+* [Theme](#theme)
+* [Technical details](#technical-details)
+
+
+Introduction
+------------
+
+ProlongationENT relies on EsupUserApps or uPortal to know which applications are allowed.
+It will render this information with a menu, a list or whatever you want.
+
+### Slides
+
+[ProlongationENT et uPortal](http://prigaux.github.io/ProlongationENT-et-uPortal/#/3) (in french)
+
+### Diagrams
+
+This diagram shows the links between the different components:
+
+[![compontents](docs/diagram.png)](docs/diagram.svg)
+
+And here is a more complete workflow:
+
+[![workflow](docs/workflow.png)](docs/workflow.svg)
+
+
+
 Configuration
 -------------
 
 * create ```src/main/webapp/WEB-INF/config.json``` similar to ```config-example.json```
 * deploy using ```mvn package``` (or modify ```build.properties``` and use ```ant deploy```)
-* test the result with ```https://ent.univ.fr/ProlongationENT/test/```
+* test the result with ```https://ent.univ.fr/ProlongationENT/test/#/test/layout.jsonp``` then ```https://ent.univ.fr/ProlongationENT/test/```
 
-### ProlongationENT with external uPortal4 ```/layout.json``` web service
+### with EsupUserApps web service
 
-You can delegate to uPortal the computing of user's layout (channels, apps).
+[ESupUserApps](https://github.com/EsupPortail/EsupUserApps) is a simple java application which computes users's layout (channels, apps).
 
-You must first install ```utils/uportal4/layout.jsp``` in uPortal's webapp directory.
+To use EsupUserApps, configure ProlongationENT ```layout_url``` in config.json:
+```js
+   "layout_url": "https://ent.univ.fr/EsupUserApps/layout",
+```
+
+### with uPortal4 web service
+
+You can use uPortal to compute user's layout (channels, apps).
+
+You must [install a JSP in uPortal's webapp directory](utils/uportal4/README.md)
 
 Then configure ```layout_url``` in config.json:
 ```js
-   "layout_url": "https://ent.univ.fr/layout.jsp",
+   "layout_url": "https://ent.univ.fr/uPortal/layout.jsp",
 ```
-
-:warning: Versions 4.0 4.1 4.2 of uportals have a [bug](https://issues.jasig.org/browse/UP-4364), apply [those commits](https://github.com/Jasig/uPortal/pull/506) before using layout.json.
 
 ### reverse proxy caching
 
@@ -35,7 +71,8 @@ CacheEnable disk /ProlongationENT
 will ensure the latest cached version when the servlet is down.
 
 
-Intégration dans une application
+
+Application integration
 -------------
 
 Simply add the following to applications:
@@ -58,21 +95,20 @@ Substitute "s|<body>|<body> <script>window.prolongation_ENT_args = { current: 'x
 * current, currentAppIds
 * no_titlebar
 * hide_menu
-
 * logout: used to find the logout button. bandeau's logout will trigger a click on app's logout button
 * login
 * is_logged
-
 * ping_to_increase_session_timeout
 * quirks
 
 NB: for the full list, see ```interface prolongation_ENT_args``` in ```lib/defs.d.ts```
 
-Themes
+
+
+Theme
 -------------------
 
-Themes are composed of CSS, images, HTML templates (cf ```webapp/theme-simple```).
-If you need javascript to animate HTML templates, you can also write ```webapp/lib/theme-xxx.ts```.
+Themes are composed of CSS, images, HTML templates (cf ```webapp/theme-simple```) and javascript (cf ```webapp/lib/theme-simple.ts```).
 
 If you write a new theme, or need help writing it, please contact Pascal Rigaux or esup-utilisateurs@esup-portail.org (french list).
 
@@ -80,6 +116,8 @@ If you write a new theme, or need help writing it, please contact Pascal Rigaux 
 
 Technical details
 -------------------
+
+NB: ProlongationENT is mostly javascript/HTML/CSS. The java code is small and could be replaced by [webpack](https://webpack.github.io/) or [browserify](http://browserify.org/).
 
 ### all urls
 

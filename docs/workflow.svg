@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="44cm" height="23cm" viewBox="-705 -134 873 448" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #ff0000" cx="27.0125" cy="188.492" rx="138.526" ry="60.8283"/>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="27.0125" y="197.053">
+      <tspan x="27.0125" y="197.053">ProlongationENT</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #00ff00" cx="-348.813" cy="24.2577" rx="61.6949" ry="43.5207"/>
+    <text font-size="33.8667" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-348.813" y="34.491">
+      <tspan x="-348.813" y="34.491">CAS</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-283.554" y="117.401">
+    <tspan x="-283.554" y="117.401"></tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-283.554" y="117.401">
+    <tspan x="-283.554" y="117.401"></tspan>
+  </text>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-393.011" y1="248.23" x2="-299.895" y2="248.23"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-393.011" y1="314.563" x2="-299.895" y2="314.563"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -393.011,248.23 A 33.1667,33.1667 0 0 0 -426.178,281.397"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -266.728,281.397 A 33.1667,33.1667 0 0 0 -299.895,248.23"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-426.178" y1="281.397" x2="-426.178" y2="281.397"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x1="-266.728" y1="281.397" x2="-266.728" y2="281.397"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -426.178,281.397 A 33.1667,33.1667 0 0 0 -393.011,314.563"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" d="M -299.895,314.563 A 33.1667,33.1667 0 0 0 -266.728,281.397"/>
+    <text font-size="33.8667" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-346.453" y="291.63">
+      <tspan x="-346.453" y="291.63">browser</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #00ff00" cx="24.8392" cy="25.1537" rx="134.491" ry="56.2995"/>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="24.8392" y="16.0759">
+      <tspan x="24.8392" y="16.0759">EsupUserApps</tspan>
+      <tspan x="24.8392" y="51.3537">or uPortal</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x="-49.9" y="144.979" width="62.8" height="29.1667"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-18.5" y="164.729">
+      <tspan x="-18.5" y="164.729">theme</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #ffffff" x="27.8228" y="204.812" width="56.45" height="29.1667"/>
+    <text font-size="16.9333" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="56.0478" y="224.562">
+      <tspan x="56.0478" y="224.562">menu</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-50.2378" y1="76.9672" x2="-294.718" y2="245.692"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-53.7877,85.4922 -48.3974,75.6971 -59.4677,77.262 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-291.168,237.167 -296.558,246.962 -285.488,245.397 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-285.128" y1="24.4104" x2="-116.115" y2="24.8157"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-123.891,29.7971 -113.879,24.8211 -123.867,19.7971 "/>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #00ff00" cx="-348.797" cy="-87.9191" rx="73.0112" ry="43.2809"/>
+    <text font-size="33.8667" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-348.797" y="-77.6858">
+      <tspan x="-348.797" y="-77.6858">LDAP</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-192.453" y="145.88" width="39.95" height="30.9"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-172.478" y="157.78">
+      <tspan x="-172.478" y="157.78">layout</tspan>
+      <tspan x="-172.478" y="173.78">jsonp</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-247.135" y="17.1684" width="97.5" height="14.9"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-198.385" y="29.0684">
+      <tspan x="-198.385" y="29.0684">serviceValidate</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-281.933" y1="-67.6842" x2="-87.4454" y2="-8.8268"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-96.3248,-6.29 -85.3052,-8.17911 -93.4282,-15.8613 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-348.354" y1="74.2516" x2="-346.798" y2="243.762"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-343.283,81.9693 -348.375,72.0156 -353.283,82.0611 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-351.869,236.044 -346.778,245.998 -341.87,235.953 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-363.176" y="151.557" width="31.2" height="14.9"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-347.576" y="163.457">
+      <tspan x="-347.576" y="163.457">login</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-95.4511" y1="218.956" x2="-262.401" y2="260.487"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-256.073,253.761 -264.571,261.027 -253.659,263.465 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-207.921" y="232.812" width="53.65" height="14.9"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-181.096" y="244.712">
+      <tspan x="-181.096" y="244.712">loader.js</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 4; stroke: #00ff00" cx="-640.851" cy="22.9739" rx="61.6949" ry="43.5207"/>
+    <text font-size="33.8667" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-640.851" y="33.2072">
+      <tspan x="-640.851" y="33.2072">app</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-597.339" y1="61.1686" x2="-387.548" y2="245.323"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-588.206,62.5328 -599.02,59.6935 -594.803,70.0481 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-396.681,243.959 -385.868,246.799 -390.084,236.444 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-412.131" y1="-63.8711" x2="-580.475" y2="0.0490982"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-574.992,-7.38127 -582.566,0.842841 -571.442,1.9675 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-348.803" y1="-42.6486" x2="-348.806" y2="-25.7384"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-353.805,-33.503 -348.806,-23.5023 -343.805,-33.5016 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-412.5" y1="23.9777" x2="-572.692" y2="23.2735"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-564.906,18.3077 -574.928,23.2637 -564.95,28.3076 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-543.582" y="16.1658" width="97.5" height="14.9"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-494.832" y="28.0658">
+      <tspan x="-494.832" y="28.0658">serviceValidate</tspan>
+    </text>
+  </g>
+</svg>
