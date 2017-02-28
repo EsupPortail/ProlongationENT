@@ -8,11 +8,7 @@ You must first install ```utils/uportal4/layout.jsp``` in uPortal's webapp direc
 
 ### uPortal 4.3+
 
-You must modifiy ```layout_json_url``` in ```layout.jsp```:
-
-```java
-String layout_json_url = "/api/v1/dlm/layout.json";
-```
+Use file in ```utils/uportal43```
 
 ### uPortal 4.0 4.1 4.2
 
