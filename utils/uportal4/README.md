@@ -8,13 +8,7 @@ You must first install ```utils/uportal4/layout.jsp``` in uPortal's webapp direc
 
 ### uPortal 4.3+
 
-You must modifiy ```layout_json_url``` and ```org.jasig.portal.channels.CLogin.CasLoginUrl``` property in ```layout.jsp```:
-
-```java
-String layout_json_url = "/api/v1/dlm/layout.json";
-
-String casLoginUrl = file_get_properties(request, conf_file).getProperty("org.apereo.portal.channels.CLogin.CasLoginUrl");
-```
+Use file in ```utils/uportal43```
 
 ### uPortal 4.0 4.1 4.2
 
