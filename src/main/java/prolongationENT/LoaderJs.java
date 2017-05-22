@@ -32,7 +32,7 @@ public class LoaderJs {
         } else if (!jsHash.equals(request.getParameter("v"))) {
             int one_hour = 60 * 60;
             if (conf.themes.alternatives != null) {
-                respond_js(response, one_hour, String.format(file_get_contents(request, "lib/loader-chooser.ts"),
+                respond_js(response, one_hour, String.format(file_get_contents(request, "lib/loader-chooser.js"),
                                                              conf.prolongationENT_url + "/loader.js", jsHash,
                                                              conf.themes.alternatives.cookieName));
             } else {
@@ -48,9 +48,9 @@ public class LoaderJs {
     }
     
     String compute(HttpServletRequest request, String theme) {
-        String helpers_js = file_get_contents(request, "lib/helpers.ts");
-        String main_js = file_get_contents(request, "lib/main.ts");
-        String loader_js = file_get_contents(request, "lib/loader.ts");
+        String helpers_js = file_get_contents(request, "lib/helpers.js");
+        String main_js = file_get_contents(request, "lib/main.js");
+        String loader_js = file_get_contents(request, "lib/loader-base.js");
 
         String js_css = json_encode(
             asMap("base",    get_css_with_absolute_url(request, theme, "main.css"))
@@ -69,16 +69,16 @@ public class LoaderJs {
         js_conf.put("theme", theme);
 
         String plugins =
-            file_get_contents(request, "lib/plugins.ts") +
-            file_get_contents(request, "lib/" + theme + ".ts");
+            file_get_contents(request, "lib/plugins.js") +
+            file_get_contents(request, "lib/" + theme + ".js");
         for (String plugin : conf.plugins) {
-            plugins += file_get_contents(request, "lib/plugin-" + plugin + ".ts");
+            plugins += file_get_contents(request, "lib/plugin-" + plugin + ".js");
         }
         
         return
             "(function () {\n" +
             "if (!window.prolongation_ENT) window.prolongation_ENT = {};\n" +
-            file_get_contents(request, "lib/init.ts") +
+            file_get_contents(request, "lib/init.js") +
             "pE.CONF = " + json_encode(js_conf) + "\n\n" +
             (conf.disableCSSInlining ? "" : "pE.CSS = " + js_css + "\n\n") +
             "pE.TEMPLATES = " + templates + "\n\n" +

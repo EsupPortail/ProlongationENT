@@ -108,7 +108,7 @@ NB: for the full list, see ```interface prolongation_ENT_args``` in ```lib/defs.
 Theme
 -------------------
 
-Themes are composed of CSS, images, HTML templates (cf ```webapp/theme-simple```) and javascript (cf ```webapp/lib/theme-simple.ts```).
+Themes are composed of CSS, images, HTML templates (cf ```webapp/theme-simple```) and javascript (cf ```webapp/lib/theme-simple.js```).
 
 If you write a new theme, or need help writing it, please contact Pascal Rigaux or esup-utilisateurs@esup-portail.org (french list).
 

@@ -8,7 +8,7 @@ var loadBandeauJs = function(params) {
     res += ',' + (window.devicePixelRatio || 1).toFixed(2) + ',' + angle;
     
     params.push("res=" + res);
-    if (pE.PARAMS) params.push('if_none_match=' + pE.PARAMS.hash); // pE.PARAMS is null when called from loader.ts
+    if (pE.PARAMS) params.push('if_none_match=' + pE.PARAMS.hash); // pE.PARAMS is null when called from loader.js
     if (pE.loadTime) params.push("time=" + pE.loadTime);
     params.push("callback=window.prolongation_ENT.main");
     h.loadScript(args.layout_url || pE.CONF.layout_url, params);
