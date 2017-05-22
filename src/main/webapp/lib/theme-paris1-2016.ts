@@ -83,7 +83,7 @@
             }
         }
         mayAddPositionedApp();
-        h.simpleEach(pE.DATA.topApps, addFname);
+        h.simpleEach(pE.DATA.topApps || Object.keys(pE.validApps), addFname);
         return list;
     }
  
