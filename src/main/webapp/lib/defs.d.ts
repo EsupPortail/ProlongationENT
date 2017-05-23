@@ -50,7 +50,7 @@ interface TEMPLATES {
 }
 
 interface prolongation_ENT_args {
-  quirks: string[];
+  quirks: ('window-resize')[];
   current: string;
   currentAppIds: string[];
   div_id: string;
@@ -95,7 +95,7 @@ interface prolongation_ENT {
   localStorageGet(field: string): string;
   personAttr(attr: string): string;  
   relogUrl(app: app): string;
-  callPlugins(event: string): any;
+  callPlugins(event: 'onNotLogged' | 'post_compute_currentApp' | 'post_header_add' | 'main' | 'logout_buttons' | 'computeFooter' | 'computeHeader'): any;
   plugins: plugin[];
   onAsyncLogout(): void;
   detectReload(time): void;
@@ -119,7 +119,7 @@ interface helpers {
   insertAfter(e: Element, newNode: Element);
   eltMatches(e: Element, selector: string): boolean;
   eltClosest(e: Element, selector: string): Element;
-  simpleQuerySelectorAll(selector: string): NodeListOf<Element> | any[];
+  simpleQuerySelectorAll(selector: string): NodeListOf<Element>;
   simpleQuerySelector(selector: string): Element;
   getCookie(name: string): string;
   removeCookie(name: string, domain: string, path: string);
