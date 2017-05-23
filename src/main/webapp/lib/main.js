@@ -246,7 +246,7 @@ function mayUpdate() {
             loadBandeauJs(['noCache=1']);
         }
     } else {
-        var age = h.now() - sessionStorageGet(currentApp.fname + ":time");
+        var age = h.now() - parseInt(sessionStorageGet(currentApp.fname + ":time"));
         if (age > CONF.time_before_checking_browser_cache_is_up_to_date) {
             h.mylog("cached bandeau is old (" + age + "s), updating it softly");
             sessionStorageSet(currentApp.fname + ":time", h.now()); // the new bandeau will update "time", but only if bandeau has changed!
