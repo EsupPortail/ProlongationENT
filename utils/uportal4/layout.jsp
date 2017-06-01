@@ -20,13 +20,13 @@ String urlencode(String s) throws Exception {
 }
 
 %><% 
-String layout_json_url = "/layout.json"; // replace with "/api/v1/dlm/layout.json" on uPortal 4.3+
+String layout_json_url = "/layout.json";
 String callback = request.getParameter("callback");
 String user = request.getRemoteUser();
 if ((user == null || user.equals("guest")) && request.getParameter("auth_checked") == null) {
     // redirect to CAS
     String conf_file = "/WEB-INF/classes/properties/security.properties";
-    String casLoginUrl = file_get_properties(request, conf_file).getProperty("org.jasig.portal.channels.CLogin.CasLoginUrl"); // replace with "org.apereo.portal.channels.CLogin.CasLoginUrl" on uPortal 4.3+
+    String casLoginUrl = file_get_properties(request, conf_file).getProperty("org.jasig.portal.channels.CLogin.CasLoginUrl");
 
     String currentUrl = request.getRequestURI() + "?auth_checked&" + request.getQueryString();
     String loginParam = "?refUrl=" + urlencode(currentUrl);
