@@ -28,7 +28,7 @@ if ((user == null || user.equals("guest")) && request.getParameter("auth_checked
     String conf_file = "/WEB-INF/classes/properties/security.properties";
     String casLoginUrl = file_get_properties(request, conf_file).getProperty("org.jasig.portal.channels.CLogin.CasLoginUrl"); // replace with "org.apereo.portal.channels.CLogin.CasLoginUrl" on uPortal 4.3+
 
-    String currentUrl = request.getServletPath() + "?auth_checked&" + request.getQueryString();
+    String currentUrl = request.getRequestURI() + "?auth_checked&" + request.getQueryString();
     String loginParam = "?refUrl=" + urlencode(currentUrl);
     response.sendRedirect(casLoginUrl + urlencode(loginParam) + "&gateway=true");
 } else {

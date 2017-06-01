@@ -23,23 +23,11 @@ public class LoaderJs {
     }
     
     void loader_js(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String wantedTheme = request.getParameter("theme");
-        if (wantedTheme != null && conf.themes.alternatives != null &&
-            conf.themes.alternatives.list.contains(wantedTheme)) {
-            // NB: no strong caching for alternative themes
+        if (!jsHash.equals(request.getParameter("v"))) {
             int one_hour = 60 * 60;
-            respond_js(response, one_hour, compute(request, request.getParameter("theme")));
-        } else if (!jsHash.equals(request.getParameter("v"))) {
-            int one_hour = 60 * 60;
-            if (conf.themes.alternatives != null) {
-                respond_js(response, one_hour, String.format(file_get_contents(request, "lib/loader-chooser.js"),
-                                                             conf.prolongationENT_url + "/loader.js", jsHash,
-                                                             conf.themes.alternatives.cookieName));
-            } else {
-                // redirect to versioned loader.js which has long cache time
-                setCacheControlMaxAge(response, one_hour);
-                response.sendRedirect("loader.js?v=" + jsHash);
-            }
+            // redirect to versioned loader.js which has long cache time
+            setCacheControlMaxAge(response, one_hour);
+            response.sendRedirect("loader.js?v=" + jsHash);
         } else {
             int one_year = 60 * 60 * 24 * 365;
             response.setHeader("Etag", jsHash);

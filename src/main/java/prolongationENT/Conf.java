@@ -2,7 +2,6 @@ package prolongationENT;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 class Conf {
 
@@ -14,15 +13,6 @@ static class Main {
     String layout_url;
     String theme = "theme-simple";
     List<String> plugins = new ArrayList<>();
-
-    static class Themes {
-        static class Alternatives {
-            Set<String> list;
-            String cookieName = "ProlongationENT_theme";
-        }
-        Alternatives alternatives;
-    }
-    Themes themes = new Themes();
 
     int time_before_checking_browser_cache_is_up_to_date = 60;
 
