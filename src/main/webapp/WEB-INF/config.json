@@ -1,7 +1,7 @@
 // NB: not pure json, comments & some trailing commas are allowed :)
 {
     "theme": "theme-paris1-2016",
-    "plugins": ["delegateAuth", "paris1-tchat"],
+    "plugins": ["delegateAuth", "paris1-tchat", "paris1-dynamic-agenda-icon"],
     "cas_base_url": "https://cas-test.univ-paris1.fr/cas",
     "uportal_base_url": "https://esup-test.univ-paris1.fr",
     "prolongationENT_url": "https://ent-test.univ-paris1.fr/ProlongationENT",
