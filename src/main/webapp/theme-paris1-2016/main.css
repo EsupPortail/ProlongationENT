@@ -101,7 +101,7 @@ body {
     filter: brightness(1.25);
     -webkit-filter: brightness(1.25);
 }
-#pE-header .pE-button img {
+#pE-header .pE-button .icon {
   width: 40px;
   height: 40px;
   margin: 2px 0 3.5px 0;

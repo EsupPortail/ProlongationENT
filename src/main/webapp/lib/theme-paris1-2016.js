@@ -46,7 +46,7 @@
             }
         }
         var a = "<a title='" + h.escapeQuotes(app.description) + "' href='" + url + "' data-fname='" + app.fname + "'>" +
-            "<img src='" + themeUrl() + "/icon/" + simplifyFname(app.fname) + ".svg'><br>" +
+            "<img class='icon' src='" + themeUrl() + "/icon/" + simplifyFname(app.fname) + ".svg'><br>" +
           h.escapeQuotes(app.shortText || app.text || app.title) + "</a>";
         return "<div class='" + classes.join(' ') + "'>" + a + "</div>";
     }
