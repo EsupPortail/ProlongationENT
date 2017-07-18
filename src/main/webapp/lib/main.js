@@ -19,7 +19,7 @@ pE.personAttr = function(attrName) {
 };
 
 pE.relogUrl = function(app) {
-    return app.url.replace(/^(https?:\/\/[^\/]*).*/, "$1") + "/ProlongationENT/redirect?relog&impersonate&id=" + app.fname;
+    return app.url.replace(/^(https?:\/\/[^/]*).*/, "$1") + "/ProlongationENT/redirect?relog&impersonate&id=" + app.fname;
 };
 
 function computeValidApps() {

@@ -11,7 +11,7 @@ function computeHeader() {
 }
 
 function relogUrl(app) {
-    return app.url.replace(/^(https?:\/\/[^\/]*).*/, "$1") + "/ProlongationENT/redirect?relog&impersonate&id=" + app.fname;
+    return app.url.replace(/^(https?:\/\/[^/]*).*/, "$1") + "/ProlongationENT/redirect?relog&impersonate&id=" + app.fname;
 }
 function computeLink(app) {
     // for uportal4 layout compatibility:

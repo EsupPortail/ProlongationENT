@@ -132,8 +132,8 @@ toJSON: function (o) {
 escapeQuotes: function(s) {
     var str = s;
     if (str) {
-        str=str.replace(/\'/g,'&#39;');
-        str=str.replace(/\"/g,'&quot;');
+        str=str.replace(/'/g,'&#39;');
+        str=str.replace(/"/g,'&quot;');
     }
     return str;
 },
