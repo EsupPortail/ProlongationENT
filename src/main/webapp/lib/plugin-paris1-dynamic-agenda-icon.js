@@ -31,7 +31,7 @@
  + '<path fill="#FFFFFF" d="M-250.757-804.736v-41.441h12.211v41.441H-250.757z"/>'
  + '<text id="day" x="-314" y="-700" font-family="Arial" font-size="117" fill="#FFFFFF" text-anchor="middle">' + new Date().getDate() + '</text>'
  + '</svg>';
-        img.parentElement.replaceChild(e, img)
+        img.parentElement.replaceChild(e, img);
     }
 
     var plugin = {
