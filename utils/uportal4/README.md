@@ -23,8 +23,3 @@ Configure ```layout_url``` in ProlongationENT ```config.json```:
 ```js
    "layout_url": "https://ent.univ.fr/layout.jsp",
 ```
-
-Solution alternative
---------------------
-
-[uPortal-home](http://uportal-project.github.io/uportal-home/) utilise une solution similaire : [silent login](https://github.com/uPortal-Project/uportal-home/blob/master/docs/silent-login.md) avant de faire des requêtes XHR. Cela semble nécessiter un patch uPortal qui n'est pas fourni.
