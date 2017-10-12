@@ -109,7 +109,7 @@
             themeUrl: themeUrl(),
             logout_url: pE.CONF.ent_logout_url,
             userDetails: pE.personAttr("displayName") || pE.personAttr("mail"),
-            accountAnchorClass: pE.validApps["CCompte-pers"] || pE.validApps["CCompte-etu"] ? '' : 'pE-hide',
+            accountAnchorClass: pE.validApps["CCompte"] || pE.validApps["CCompte-pers"] || pE.validApps["CCompte-etu"] ? '' : 'pE-hide',
             pagePersoClass: pE.validApps["page-perso"] ? '' : 'pE-hide',
         });
     }
