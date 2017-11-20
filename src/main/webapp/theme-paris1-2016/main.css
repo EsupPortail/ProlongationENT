@@ -48,7 +48,6 @@ body {
   display: inline-block;
   padding-left: 0.6em;
   padding-top: 10px;
-  border-bottom: 2px dotted #4072AE;
 }
 #pE-header .pE-title-ent, #pE-header .pE-title-separator, #pE-header .pE-title-app, #pE-header .pE-title-app a span {
   font-size: 21.45px !important;
