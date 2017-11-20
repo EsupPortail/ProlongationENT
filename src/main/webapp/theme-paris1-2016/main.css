@@ -50,13 +50,21 @@ body {
   padding-top: 10px;
   border-bottom: 2px dotted #4072AE;
 }
-#pE-header .pE-title-ent, #pE-header .pE-title-app a span {
+#pE-header .pE-title-ent, #pE-header .pE-title-separator, #pE-header .pE-title-app, #pE-header .pE-title-app a span {
   font-size: 21.45px !important;
   font-family: Arial, sans-serif !important;
   font-weight: initial !important;
 }
-#pE-header .pE-title-ent {
+#pE-header .pE-title-separator {
+  content: "|";
   color: #C89108 !important;
+  vertical-align: text-bottom !important;
+  font-size: 18px !important;
+  margin-left: 0.2rem;
+  margin-right: 0.3rem;
+}
+#pE-header .pE-title-ent {
+  color: #9F6C07 !important;
 }
 #pE-header .pE-title-app, #pE-header .pE-title-app a span {
   color: #00326E !important;
