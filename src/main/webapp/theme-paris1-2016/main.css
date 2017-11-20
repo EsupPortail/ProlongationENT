@@ -373,7 +373,7 @@ li.pE-accountSeparator {
     #pE-buttons {
         display: none;
     }
-    .pE-title-ent, .pE-title-app-long {
+    .pE-title-ent, .pE-title-separator, .pE-title-app-long {
         display: none;
     }
     .pE-title-app-short {
