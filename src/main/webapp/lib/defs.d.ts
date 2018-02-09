@@ -7,6 +7,8 @@ interface app {
   url: string;
   position: number;
   hashelp: boolean;
+  forbidden: boolean;
+  hide: boolean;
 }
 interface menuEntry {
   title: string;
@@ -85,6 +87,7 @@ interface prolongation_ENT {
   
   maybe_loaded: boolean;
   
+  allApps: {};
   validApps: {};
   DATA: DATA;
   CONF: CONF;

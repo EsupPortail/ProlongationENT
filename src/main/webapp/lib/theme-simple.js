@@ -33,7 +33,7 @@ function computeMenu(currentApp) {
     var li_list = h.simpleMap(pE.DATA.layout.folders, function (tab) {
         if (tab.title === "__hidden__") return '';
         var sub_li_list = h.simpleMap(tab.portlets, function(app) {
-            return computeLink(app);
+            return app.hide || app.forbidden ? '' : computeLink(app);
         });
         
         var className = h.simpleContains(tab.portlets, currentApp) ? "activeTab" : "inactiveTab";

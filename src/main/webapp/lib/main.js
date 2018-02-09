@@ -22,7 +22,7 @@ pE.relogUrl = function(app) {
     return app.url.replace(/^(https?:\/\/[^/]*).*/, "$1") + "/ProlongationENT/redirect?relog&impersonate&id=" + app.fname;
 };
 
-function computeValidApps() {
+function computeAllApps() {
     var m = {};
     h.simpleEach(DATA.layout.folders, function (tab) {
         h.simpleEach(tab.portlets, function (app) {
@@ -32,16 +32,24 @@ function computeValidApps() {
     return m;
 }
 
+function computeValidApps(allApps) {
+    var m = {};
+    h.simpleEachObject(allApps, function (fname, app) {
+        if (!app.forbidden && !app.hide) m[fname] = app;
+    });
+    return m;
+}
+
 function computeBestCurrentAppId() {
     var ids = args.currentAppIds || [args.current];
     if (!ids) return;
     // multi ids for this app, hopefully only one id is allowed for this user...
     // this is useful for apps appearing with different titles based on user affiliation
-    ids = h.simpleFilter(ids, function (id) { return pE.validApps[id]; });
+    ids = h.simpleFilter(ids, function (id) { return pE.allApps[id]; });
     if (ids.length > 1) {
         h.mylog("multiple appIds (" + ids + ") for this user, choosing first");
     }
-    return pE.validApps[ids[0]];
+    return pE.allApps[ids[0]];
 }
 
 function bandeau_div_id() {
@@ -259,7 +267,8 @@ function mayUpdate() {
     }
 }
 
-pE.validApps = computeValidApps();
+pE.allApps = computeAllApps();
+pE.validApps = computeValidApps(pE.allApps);
 currentApp = pE.currentApp = computeBestCurrentAppId() || {};
 
 if (!args.is_logged)
