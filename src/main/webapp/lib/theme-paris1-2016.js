@@ -111,6 +111,7 @@
             userDetails: pE.personAttr("displayName") || pE.personAttr("mail"),
             accountAnchorClass: pE.validApps["CCompte"] || pE.validApps["CCompte-pers"] || pE.validApps["CCompte-etu"] ? '' : 'pE-hide',
             pagePersoClass: pE.validApps["page-perso"] ? '' : 'pE-hide',
+            impersonateClass: pE.validApps["impersonate"] || pE.canImpersonateAppIds ? '' : 'pE-hide',
         });
     }
 
