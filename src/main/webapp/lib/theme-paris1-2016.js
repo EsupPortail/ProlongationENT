@@ -39,9 +39,9 @@
         
         var url = app.url;
         var classes = ['pE-button'];
-        if (pE.DATA.canImpersonate) {
+        if (pE.canImpersonateAppIds) {
             url = pE.relogUrl(app);
-            if (!h.simpleContains(pE.DATA.canImpersonate, app.fname)) {
+            if (!h.simpleContains(pE.canImpersonateAppIds, app.fname)) {
                 classes.push('pE-button-forbidden');
             }
         }
@@ -90,7 +90,7 @@
     function computeHeader() {
         var app = pE.currentApp;
         var appLinks = computeMenu(app);
-        var topApps = appLinks.slice(0, pE.DATA.canImpersonate ? 99 : 12).join("<!--\n-->");
+        var topApps = appLinks.slice(0, pE.canImpersonateAppIds ? 99 : 12).join("<!--\n-->");
 
         var html_elt = document.getElementsByTagName("html")[0];
         if (!args.no_footer && !args.no_sticky_footer) h.toggleClass(html_elt, 'pE-sticky-footer');

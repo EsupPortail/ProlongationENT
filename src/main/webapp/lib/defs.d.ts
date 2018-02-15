@@ -20,7 +20,7 @@ interface DATA {
   layout: { folders: menuEntry[] };
   topApps: string[];
   realUserId: string;
-  canImpersonate: string[];
+  canImpersonate: app[];
 }
 
 interface PARAMS {
@@ -89,6 +89,7 @@ interface prolongation_ENT {
   
   allApps: {};
   validApps: {};
+  canImpersonateAppIds: string[];
   DATA: DATA;
   CONF: CONF;
   PARAMS: PARAMS;

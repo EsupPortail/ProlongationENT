@@ -19,9 +19,9 @@ function computeLink(app) {
     
     var url = app.url;
     var classes = '';
-    if (pE.DATA.canImpersonate) {
+    if (pE.canImpersonateAppIds) {
         url = relogUrl(app);
-        if (!h.simpleContains(pE.DATA.canImpersonate, app.fname)) {
+        if (!h.simpleContains(pE.canImpersonateAppIds, app.fname)) {
             classes = "class='bandeau_ENT_Menu_Entry__Forbidden'";
         }
     }

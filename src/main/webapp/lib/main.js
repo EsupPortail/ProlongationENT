@@ -40,6 +40,12 @@ function computeValidApps(allApps) {
     return m;
 }
 
+function computeCanImpersonateAppIds() {
+    if (DATA.canImpersonate) {
+        pE.canImpersonateAppIds = h.simpleMap(DATA.canImpersonate, function (app) { return app.fname });
+    }
+}
+
 function computeBestCurrentAppId() {
     var ids = args.currentAppIds || [args.current];
     if (!ids) return;
@@ -181,7 +187,7 @@ function triggerWindowResize() {
 function detectImpersonationPbs() {
     var want = h.getCookie(CONF.cas_impersonate.cookie_name);
     // NB: explicit check with "!=" since we do not want null !== undefined
-    if (want != pE.wanted_uid && (pE.wanted_uid || h.simpleContains(DATA.canImpersonate, currentApp.fname))) {
+    if (want != pE.wanted_uid && (pE.wanted_uid || h.simpleContains(pE.canImpersonateAppIds, currentApp.fname))) {
         var msg = "Vous êtes encore identifié sous l'utilisateur " + DATA.user + ". Acceptez vous de perdre la session actuelle ?";
         if (window.confirm(msg)) {
             document.location.href = pE.relogUrl(currentApp);
@@ -269,6 +275,7 @@ function mayUpdate() {
 
 pE.allApps = computeAllApps();
 pE.validApps = computeValidApps(pE.allApps);
+computeCanImpersonateAppIds();
 currentApp = pE.currentApp = computeBestCurrentAppId() || {};
 
 if (!args.is_logged)
