@@ -117,7 +117,7 @@ body {
   background: none !important;
 }
 #pE-header .pE-button, #pE-header .pE-button a {
-    color: #777 !important;
+    color: #666 !important;
     line-height: 10.4px !important;
     font-size: 10.4px !important;
     font-weight: initial !important;
@@ -196,7 +196,7 @@ body {
   margin-top: 1em;
   padding: 1em;
   background: #f0f0f0;
-  color: #777;
+  color: #555;
 }
 
 
