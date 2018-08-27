@@ -315,14 +315,10 @@ li.pE-accountSeparator {
     padding-top: 1em;
     text-align: center;
 }
-.pE-portalLogo a {
+.pE-portalLogo img {
     width: 200px;
     height: 64px;
-}
-.pE-portalLogo a {
-    display: inline-block;
-    background-image: url("logo2.png");
-    background-size: cover;
+    vertical-align: initial !important;
 }
 
 /* sticky footer */
