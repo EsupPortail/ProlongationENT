@@ -45,7 +45,7 @@
                 classes.push('pE-button-forbidden');
             }
         }
-        var a = "<a title='" + h.escapeQuotes(app.description) + "' href='" + url + "' data-fname='" + app.fname + "'>" +
+        var a = "<a title='" + h.escapeQuotes(app.description) + "' href='" + url + "' data-fname='" + app.fname + "' tabindex='-1'>" +
             "<img class='icon' alt='' src='" + themeUrl() + "/icon/" + simplifyFname(app.fname) + ".svg'><br>" +
           h.escapeQuotes(app.shortText || app.text || app.title) + "</a>";
         return "<div class='" + classes.join(' ') + "'>" + a + "</div>";
