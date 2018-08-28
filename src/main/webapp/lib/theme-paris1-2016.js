@@ -99,8 +99,8 @@
         var photo_version = !pE.DATA.realUserId && pE.personAttr('modifyTimestamp');
 
         var appTitle = app.url ? "<a href='" + app.url + "'><span class='pE-title-app-short'>" + 
-           h.escapeQuotes(app.shortText || app.text || app.title) + "</span><span class='pE-title-app-long'>" +
-           h.escapeQuotes(app.title) + "</span></a>" : "Application non autorisée";
+           h.escapeQuotes(app.shortText || app.text || app.title) + "</span><h1 class='pE-title-app-long'>" +
+           h.escapeQuotes(app.title) + "</h1></a>" : "Application non autorisée";
         return h.template(pE.TEMPLATES.header, {
             appTitle: appTitle,
             topApps: topApps,

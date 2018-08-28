@@ -49,7 +49,7 @@ body {
   padding-left: 0.6em;
   padding-top: 10px;
 }
-#pE-header .pE-title-ent, #pE-header .pE-title-separator, #pE-header .pE-title-app, #pE-header .pE-title-app a span {
+#pE-header .pE-title-ent, #pE-header .pE-title-separator, #pE-header .pE-title-app, #pE-header .pE-title-app a span, #pE-header .pE-title-app a h1 {
   font-size: 21.45px !important;
   font-family: Arial, sans-serif !important;
   font-weight: initial !important;
@@ -65,8 +65,15 @@ body {
 #pE-header .pE-title-ent {
   color: #9F6C07 !important;
 }
-#pE-header .pE-title-app, #pE-header .pE-title-app a span {
+#pE-header .pE-title-app, #pE-header .pE-title-app a span, #pE-header .pE-title-app a h1 {
   color: #00326E !important;
+}
+.pE-title-app-long {
+  display: inline;
+
+  text-transform: none !important;
+  border: 0 !important;
+  float: none !important;
 }
 
 
