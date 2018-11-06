@@ -100,6 +100,7 @@ Substitute "s|<body>|<body> <script>window.prolongation_ENT_args = { current: 'x
 * is_logged
 * ping_to_increase_session_timeout
 * quirks
+* onload
 
 NB: for the full list, see ```interface prolongation_ENT_args``` in ```lib/defs.d.ts```
 
