@@ -120,6 +120,15 @@ class Utils {
             response.setHeader("Cache-Control", "max-age=" + cacheMaxAge);
         }
     }
+
+    /* sendRedirect with Content-Length to allow Apache caching without modifying CacheMinFileSize */
+    /* (similar to std sendRedirect with "sendRedirectBody") */
+    static void sendRedirect(HttpServletResponse response, String location) throws IOException {
+        response.setStatus(302);
+        response.setHeader("Location", location);
+        response.setContentType("text/plain");
+        response.getWriter().write("Redirecting...");
+    }
     
     static void respond_js(HttpServletResponse response, long cacheMaxAge, String js) throws IOException {
         setCacheControlMaxAge(response, cacheMaxAge);
