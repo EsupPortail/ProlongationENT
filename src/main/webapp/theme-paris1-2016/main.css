@@ -82,6 +82,7 @@ body {
 
 /* en haut a droite */
 
+#pE-alert,
 #pE-buttons,
 #pE-photo,
 #pE-openMoreButtons,
@@ -101,6 +102,9 @@ body {
 }
 #pE-buttons {
   right: 116px;
+}
+#pE-alert {
+  right: 304px;
 }
 
 #pE-header .pE-button {
@@ -376,7 +380,24 @@ li.pE-accountSeparator {
     display: none;
 }
 
+#pE-alert-modal {
+    position: fixed;
+    z-index: 100008;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#pE-alert-modal > iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 @media screen and (max-width: 700px) {
+    #pE-alert {
+        right: 124px;
+    }
     #pE-buttons {
         display: none;
     }

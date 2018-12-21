@@ -28,6 +28,36 @@
     function account_toggleMenu() {
         return toggleMenu('pE-account', 'pE-photo');
     }
+
+    function display_alert() {
+        var alerts_url = 'https://ent-test.univ-paris1.fr/alertes/';
+        h.set_div_innerHTML('pE-alert-modal', '<iframe src="' + alerts_url + '"></iframe>');
+
+        window.addEventListener("message", function (event) {
+            var data = event.data || '';
+            if (data.match(/ProlongationENT:alert:close/)) {
+                const elt = document.getElementById('pE-alert-modal');
+                elt.parentElement.removeChild(elt);
+            }
+        }, false);
+
+    }
+
+    function validAlerts() {
+        return h.simpleFilter(Object.keys(pE.validApps), function (fname) { return !!fname.match(/^alert_/) });
+    }
+
+    pE['onRestdbAlerts'] = function (db) {
+        var unseen = h.simpleFilter(validAlerts(), function (fname) {
+            return !(db[fname] && db[fname].hide);
+        });
+        if (unseen.length > 0) display_alert();
+    };
+
+    function may_display_alert() {
+        var restdb_url = 'https://restdb-test.univ-paris1.fr/';
+        h.loadScript(restdb_url + 'alerts/msgs_info/$user', [ 'callback=window.prolongation_ENT.onRestdbAlerts' ]);
+    }
     
     function themeUrl() {
         return pE.CONF.prolongationENT_url + "/" + pE.CONF.theme;
@@ -189,6 +219,15 @@
 
             var buttons = document.getElementById('pE-buttons');
             if (buttons) buttons.onmousedown = log_button_click;
+
+            if (validAlerts().length > 0) {
+                var alert = document.getElementById('pE-alert');
+                if (alert) {
+                    alert.className = ''; // display it
+                    alert.onclick = display_alert;
+                    may_display_alert();
+                }
+            }
 
             h.simpleEach(h.simpleQuerySelectorAll('#pE-header .pE-button img'), function (elt) {
                 elt['onerror'] = function () {
