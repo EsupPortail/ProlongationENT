@@ -132,7 +132,7 @@
            h.escapeQuotes(app.shortText || app.text || app.title) + "</span><h1 class='pE-title-app-long'>" +
            h.escapeQuotes(app.title) + "</h1></a>" : "Application non autorisée";
         return h.template(pE.TEMPLATES.header, {
-            appTitle: appTitle,
+            appTitle: appTitle + (args['title_suffix'] || ''),
             topApps: topApps,
             accueilUrl: (pE.validApps["caccueil"] || pE.validApps["accueil-federation"] || {}).url,
             photoUrl: "https://userphoto-test.univ-paris1.fr/?cas-test&ldap-test&uid=" + pE.DATA.user + (photo_version ? "&v=" + photo_version : ''),
