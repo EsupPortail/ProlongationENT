@@ -113,7 +113,7 @@
             }
         }
         mayAddPositionedApp();
-        h.simpleEach(pE.DATA.topApps || Object.keys(pE.validApps), addFname);
+        h.simpleEach((pE.DATA.favorites || []).concat(pE.DATA.topApps || Object.keys(pE.validApps)), addFname);
         return list;
     }
  

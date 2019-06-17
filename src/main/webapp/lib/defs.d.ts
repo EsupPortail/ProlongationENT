@@ -19,6 +19,7 @@ interface DATA {
   userAttrs: { id: string };
   layout: { folders: menuEntry[] };
   topApps: string[];
+  favorites: string[];
   realUserId: string;
   canImpersonate: app[];
 }
