@@ -105,6 +105,7 @@ interface prolongation_ENT {
   plugins: plugin[];
   onAsyncLogout(): void;
   detectReload(time): void;
+  redisplay(): void;
   main(DATA: DATA, PARAMS: PARAMS, notFromLocalStorage: boolean): string;
 }
 

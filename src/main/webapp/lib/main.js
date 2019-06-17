@@ -144,7 +144,7 @@ function installFooter() {
 
 var currentApp;
 
-function installBandeau() {
+var installBandeau = pE.redisplay = function () {
     h.mylog("installBandeau");
     
     var html_elt = document.getElementsByTagName("html")[0];
