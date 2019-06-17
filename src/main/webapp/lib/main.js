@@ -260,8 +260,10 @@ function mayUpdate() {
             loadBandeauJs(['noCache=1']);
         }
     } else {
-        var age = h.now() - parseInt(sessionStorageGet(currentApp.fname + ":time"));
-        if (age > CONF.time_before_checking_browser_cache_is_up_to_date) {
+        var known_last_update = h.getCookie("pE_last_update_time"); // cookie on domain telling some information has been modified (eg: favorites)
+        var cache_time = parseInt(sessionStorageGet(currentApp.fname + ":time"));
+        var age = h.now() - cache_time;
+        if (age > CONF.time_before_checking_browser_cache_is_up_to_date || known_last_update && cache_time < parseInt(known_last_update)) {
             h.mylog("cached bandeau is old (" + age + "s), updating it softly");
             sessionStorageSet(currentApp.fname + ":time", h.now()); // the new bandeau will update "time", but only if bandeau has changed!
             loadBandeauJs([]);
