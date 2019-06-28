@@ -71,9 +71,6 @@
         var classes = ['pE-button'];
         if (pE.canImpersonateAppIds) {
             url = pE.relogUrl(app);
-            if (!h.simpleContains(pE.canImpersonateAppIds, app.fname)) {
-                classes.push('pE-button-forbidden');
-            }
         }
         var a = "<a title='" + h.escapeQuotes(app.description) + "' href='" + url + "' data-fname='" + app.fname + "' tabindex='-1'>" +
             "<img class='icon' alt='' src='" + themeUrl() + "/icon/" + app.fname + ".svg'><br>" +
@@ -120,7 +117,7 @@
     function computeHeader() {
         var app = pE.currentApp;
         var appLinks = computeMenu(app);
-        var topApps = appLinks.slice(0, pE.canImpersonateAppIds ? 99 : 12).join("<!--\n-->");
+        var topApps = appLinks.slice(0, 12).join("<!--\n-->");
 
         var html_elt = document.getElementsByTagName("html")[0];
         if (!args.no_footer && !args.no_sticky_footer) html_elt.classList.add('pE-sticky-footer');
