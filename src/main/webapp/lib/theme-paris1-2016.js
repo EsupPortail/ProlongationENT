@@ -157,7 +157,7 @@
         var app = pE.currentApp;
         return h.template(pE.TEMPLATES.footer, {
             themeUrl: themeUrl(),
-            helpUrl: (pE.validApps['gun-etu'] || { url: "https://ent.univ-paris1.fr/gun-pers-flipbook" }).url,
+            helpUrl: (pE.validApps['gun-etu'] || { url: "https://ent.univ-paris1.fr/gun-pers" }).url,
             tchat: pE.callPlugins("computeFooterTchat") || '',
             appHelp: computeHelp(app),
         });
