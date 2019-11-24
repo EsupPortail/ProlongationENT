@@ -18,7 +18,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import javax.xml.bind.annotation.adapters.HexBinaryAdapter;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -76,12 +75,23 @@ class Utils {
         return gson.toJson(o);
     }
 
+    private static final char[] DIGITS_UPPER = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+
+    static String encodeHexString(byte[] data) {
+        final StringBuilder hex = new StringBuilder(2 * data.length);
+        for (final byte b : data) {
+            hex.append(DIGITS_UPPER[(b & 0xF0) >>> 4]);
+            hex.append(DIGITS_UPPER[(b & 0x0F)]);
+        }
+        return hex.toString();
+    }
+
     static String computeMD5(String s) {
         try {
             //System.out.println("computing digest of " + file);
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] digest = md.digest(s.getBytes());
-            return (new HexBinaryAdapter()).marshal(digest);
+            return java.util.Base64.getEncoder().encodeToString(digest);
         } catch (NoSuchAlgorithmException e) {
             throw new RuntimeException(e);
         }
