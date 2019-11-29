@@ -59,9 +59,9 @@ body {
 }
 #pE-header .pE-title-separator {
   content: "|";
-  color: #C89108 !important;
+  color: #727780;
   vertical-align: text-bottom !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   margin-left: 0.2rem;
   margin-right: 0.3rem;
 }
