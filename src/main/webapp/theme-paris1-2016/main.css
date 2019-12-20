@@ -439,3 +439,7 @@ li.pE-accountSeparator {
     margin-top: -380px;
     transition: 0.2s;
 }
+
+#bandeau-anonyme-title {
+    display: none; /* useless when using either ProlongationENT or https://ent.univ-paris1.fr/assets/bandeau-anonyme/loader.js */
+}
