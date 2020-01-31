@@ -27,7 +27,7 @@ public class LoaderJs {
             int one_hour = 60 * 60;
             // redirect to versioned loader.js which has long cache time
             setCacheControlMaxAge(response, one_hour);
-            Utils.sendRedirect(response, "loader.js?v=" + jsHash);
+            Utils.sendRedirect(response, "loader.js?v=" + urlencode(jsHash));
         } else {
             int one_year = 60 * 60 * 24 * 365;
             response.setHeader("Etag", jsHash);
