@@ -91,7 +91,7 @@ class Utils {
             //System.out.println("computing digest of " + file);
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] digest = md.digest(s.getBytes());
-            return java.util.Base64.getEncoder().encodeToString(digest);
+            return java.util.Base64.getUrlEncoder().encodeToString(digest);
         } catch (NoSuchAlgorithmException e) {
             throw new RuntimeException(e);
         }
