@@ -438,6 +438,7 @@ li.pE-accountSeparator {
     height: 400px;
     margin-top: -380px;
     transition: 0.2s;
+    z-index: 100005;
 }
 
 #bandeau-anonyme-title {
