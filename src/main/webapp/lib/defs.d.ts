@@ -16,7 +16,7 @@ interface menuEntry {
 }
 interface DATA {
   user: string;
-  userAttrs: { id: string };
+  userAttrs: { [attrName: string]: string[] };
   layout: { folders: menuEntry[] };
   topApps: string[];
   favorites: string[];
