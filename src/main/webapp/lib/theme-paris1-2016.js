@@ -184,6 +184,16 @@
     }
     
     var plugin = {
+        main: function () {
+            if (window.location.hostname === 'glpi.univ-paris1.fr') {
+                var userAttrs = pE.DATA.userAttrs;
+                var is_glpi_developper = userAttrs.supannAliasLogin.some(function (login) { return login === 'santerre' || login === 'pacomte' });
+                var is_DSIUN_SAP = userAttrs.supannEntiteAffectation.some(function (affectation) { return affectation === 'DGHC' });
+                if (!is_glpi_developper && !is_DSIUN_SAP) {
+                    window.location.replace("https://glpi-front.univ-paris1.fr");
+                }
+            }
+        },
         computeHeader: computeHeader,
         computeFooter: computeFooter,
         logout_buttons: function () { return ".pE-accountLogout"; },
