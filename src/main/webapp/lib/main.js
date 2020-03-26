@@ -97,7 +97,7 @@ function isLogged() {
 }
 
 function simulateClickElt(elt) {
-    if (elt.href && elt.getAttribute('href') !== '#')  // for JSF (esup-annuaire2)
+    if (elt.href && elt.getAttribute('href') !== '#' && elt.getAttribute('href') !== 'javascript:;')  // for JSF (esup-annuaire2) & zoom.us
         document.location.href = elt.href;
     else if (elt.tagName === "FORM")
         elt.submit();
