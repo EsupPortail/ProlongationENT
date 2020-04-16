@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 282.23 282.23">
+  <title>D</title>
+  <circle cx="141.12" cy="141.12" r="141.12" transform="translate(-58.45 141.12) rotate(-45)" style="fill: #21558b"/>
+  <circle cx="141.12" cy="141.12" r="141.12" transform="translate(-58.45 141.12) rotate(-45)" style="fill: #00326e"/>
+  <g>
+    <path d="M71.54,93.71h85.63a27.36,27.36,0,0,1,27.36,27.36v59a8.58,8.58,0,0,1-8.58,8.58h-85a25.84,25.84,0,0,1-25.84-25.84V100.18a6.47,6.47,0,0,1,6.47-6.47Z" style="fill: #63a9fc"/>
+    <path d="M196.17,119.18l28-20.92c3.91-2.72,9.53-.18,9.53,4.32v76c0,4.35-5.3,6.93-9.24,4.51l-28.3-18.62" style="fill: #63a9fc"/>
+  </g>
+</svg>
