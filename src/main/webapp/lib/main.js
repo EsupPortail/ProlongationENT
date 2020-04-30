@@ -143,6 +143,7 @@ function installFooter() {
 }
 
 var currentApp;
+var currentAppIds_string;
 
 var installBandeau = pE.redisplay = function () {
     h.mylog("installBandeau");
@@ -222,7 +223,7 @@ function sessionStorageSet(field, value) {
 function setSessionStorageCache(js_text) {
     sessionStorageSet(pE.localStorage_js_text_field, js_text);
     sessionStorageSet("url", pE.CONF.prolongationENT_url);
-    sessionStorageSet(currentApp.fname + ":time", h.now());
+    sessionStorageSet(currentAppIds_string + ":time", h.now());
     
     // for old Prolongation, cleanup our mess
     if (window.localStorage) {
@@ -261,11 +262,11 @@ function mayUpdate() {
         }
     } else {
         var known_last_update = h.getCookie("pE_last_update_time"); // cookie on domain telling some information has been modified (eg: favorites)
-        var cache_time = parseInt(sessionStorageGet(currentApp.fname + ":time"));
+        var cache_time = parseInt(sessionStorageGet(currentAppIds_string + ":time"));
         var age = h.now() - cache_time;
         if (age > CONF.time_before_checking_browser_cache_is_up_to_date || known_last_update && cache_time < parseInt(known_last_update)) {
             h.mylog("cached bandeau is old (" + age + "s), updating it softly");
-            sessionStorageSet(currentApp.fname + ":time", h.now()); // the new bandeau will update "time", but only if bandeau has changed!
+            sessionStorageSet(currentAppIds_string + ":time", h.now()); // the new bandeau will update "time", but only if bandeau has changed!
             loadBandeauJs([]);
         } else if (CONF.esupUserApps_url) {
             // if user used "reload", the cached version of detectReload will change
@@ -279,6 +280,7 @@ pE.allApps = computeAllApps();
 pE.validApps = computeValidApps(pE.allApps);
 computeCanImpersonateAppIds();
 currentApp = pE.currentApp = computeBestCurrentAppId() || {};
+currentAppIds_string = (args.currentAppIds || [args.current]).join(",");
 
 if (!args.is_logged)
 args.is_logged = args.logout;
