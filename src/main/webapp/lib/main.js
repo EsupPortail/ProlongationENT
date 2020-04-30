@@ -264,8 +264,9 @@ function mayUpdate() {
         var known_last_update = h.getCookie("pE_last_update_time"); // cookie on domain telling some information has been modified (eg: favorites)
         var cache_time = parseInt(sessionStorageGet(currentAppIds_string + ":time"));
         var age = h.now() - cache_time;
-        if (age > CONF.time_before_checking_browser_cache_is_up_to_date || known_last_update && cache_time < parseInt(known_last_update)) {
-            h.mylog("cached bandeau is old (" + age + "s), updating it softly");
+        if (!cache_time ||
+            age > CONF.time_before_checking_browser_cache_is_up_to_date || known_last_update && cache_time < parseInt(known_last_update)) {
+            h.mylog((cache_time ? "cached bandeau is old (" + age + "s)" : "cached bandeau seems to be for a different app") + ", updating it softly");
             sessionStorageSet(currentAppIds_string + ":time", h.now()); // the new bandeau will update "time", but only if bandeau has changed!
             loadBandeauJs([]);
         } else if (CONF.esupUserApps_url) {
