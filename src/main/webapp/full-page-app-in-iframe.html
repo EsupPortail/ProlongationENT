@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html { 
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+        }
+        iframe {
+            border: none;
+            flex: 1 1 auto; /* 100% width + height as big as possible */
+        }
+    </style>
+</head>    
+<body>
+    <script>
+        window.prolongation_ENT_args = {}; // will be substituted with app params
+    </script>
+    <script src='https://ent.univ-paris1.fr/ProlongationENT/loader.js'></script>
+    <script>
+        function on_iframe_load(iframe) {
+            document.title = iframe.contentDocument.title;
+        }
+        var url = document.location.href.replace(/[?&]dans-ENT=true/, '')        
+        document.write('<iframe onload="on_iframe_load(this)" src="' + url +'"></iframe>')
+    </script>
+</body>
+</html>
