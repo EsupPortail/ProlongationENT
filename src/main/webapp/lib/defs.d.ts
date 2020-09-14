@@ -62,6 +62,7 @@ interface prolongation_ENT_args {
   div_is_uid: boolean;
   extra_css: string;
   logout: logout_elt;
+  logout_href: string;
   login: boolean;
   is_logged: logout_elt | boolean;
 

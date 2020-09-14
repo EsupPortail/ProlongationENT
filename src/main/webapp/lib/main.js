@@ -120,7 +120,7 @@ pE.onAsyncLogout = function() {
     if (elt) {
         simulateClickElt(elt);
     } else {
-        document.location.href = CONF.ent_logout_url;
+        document.location.href = args.logout_href || CONF.ent_logout_url;
     }
 };
 function installLogout() {

@@ -95,7 +95,8 @@ Substitute "s|<body>|<body> <script>window.prolongation_ENT_args = { current: 'x
 * current, currentAppIds
 * no_titlebar
 * hide_menu
-* logout: used to find the logout button. bandeau's logout will trigger a click on app's logout button
+* logout: CSS selector used to find the logout button. bandeau's logout will trigger a click on app's logout button
+* logout_href: url to go to for logout (sometimes easier to use than a CSS selector)
 * login
 * is_logged
 * ping_to_increase_session_timeout
