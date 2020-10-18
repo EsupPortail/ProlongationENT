@@ -77,6 +77,7 @@ interface prolongation_ENT_args {
   onload(pE: prolongation_ENT): void;
 
   layout_url: string;
+  esupUserApps_url: string;
   uid: string;
 }
 
