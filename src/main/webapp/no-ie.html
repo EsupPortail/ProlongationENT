@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00326E">
+</head>
+
+<body>
+
+  <div>
+    Le navigateur Internet Explorer n'est plus supporté par cette application.
+    Veuillez utiliser Firefox, Chrome, Safari ou Edge.
+  </div>
+
+<script>
+  var app = ((document.location.search || '').match(/service=(.*)/) || [])[1]
+  if (app) {
+    window.prolongation_ENT_args = { current: app };
+  }
+</script>
+<script src="https://ent.univ-paris1.fr/ProlongationENT/loader.js"></script>
+</body>
+                                                                                                                                                                           
+
