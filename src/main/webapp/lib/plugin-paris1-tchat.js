@@ -25,7 +25,11 @@
     
     function tchat() {
         var url = (pE.validApps["tchat-iframe"] || {}).url;
-        if (!url || h.getCookie("pE-tchat") !== "yes") return '';
+        if (!url) return '';
+        if (args.current !== 'tchat') {
+            if (h.getCookie("pE-tchat") !== "yes") return '';
+            url = url.replace(/chat.html/, 'iframe-transition.html');
+        }
 
         function toggleTchat() {
             try {
