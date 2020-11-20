@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 282.23 282.23">
+  <title>RdvScol</title>
+  <path d="M141.12,0A141.12,141.12,0,1,1,0,141.12,141.12,141.12,0,0,1,141.12,0Z" style="fill: #00326e"/>
+  <g>
+    <g style="opacity: 0.64">
+      <path d="M140.72,136a25.66,25.66,0,0,0,16.65-6c2.51,1.09,4.41,1.92,5.7,2.51s3,1.42,5.2,2.5a45.26,45.26,0,0,1,5,2.82q1.75,1.18,4.07,3.06a15.61,15.61,0,0,1,3.38,3.57,18.06,18.06,0,0,1,1.82,3.95,15,15,0,0,1,.75,4.75v43H98.15v-43a20.42,20.42,0,0,1,2-7.26,23.09,23.09,0,0,1,3.76-5.51,26.06,26.06,0,0,1,5.76-4.38q3.63-2.13,6.45-3.44t7.32-3.07A25.62,25.62,0,0,0,140.72,136Zm-.06-51.58a22.23,22.23,0,0,0-22.23,22.28,22.27,22.27,0,0,0,38,15.78,22.2,22.2,0,0,0,0-31.55A21.61,21.61,0,0,0,140.66,84.43Z" style="fill: #fff"/>
+    </g>
+    <line x1="141.17" y1="26.27" x2="141.17" y2="52.27" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 8px"/>
+    <line x1="141.17" y1="233.31" x2="141.17" y2="259.31" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 8px"/>
+    <line x1="259.64" y1="140.82" x2="233.63" y2="140.82" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 8px"/>
+    <line x1="52.6" y1="140.82" x2="26.6" y2="140.82" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 8px"/>
+    <text transform="translate(178.7 61.27)" style="font-size: 128px;fill: #fff;font-family: GaramondPremrPro, Garamond Premier Pro">.</text>
+    <text transform="translate(219.66 100.29)" style="font-size: 128px;fill: #fff;font-family: GaramondPremrPro, Garamond Premier Pro">.</text>
+    <text transform="matrix(-1, 0, 0, 1, 106.6, 60.29)" style="font-size: 128px;fill: #fff;font-family: GaramondPremrPro, Garamond Premier Pro">.</text>
+    <text transform="matrix(-1, 0, 0, 1, 65.65, 99.31)" style="font-size: 128px;fill: #fff;font-family: GaramondPremrPro, Garamond Premier Pro">.</text>
+  </g>
+</svg>
