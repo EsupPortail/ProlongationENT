@@ -391,18 +391,24 @@ li.pE-accountSeparator {
     border: none;
 }
 
-@media screen and (max-width: 700px) {
-    #pE-alert {
-        right: 124px;
-    }
-    #pE-toggle-minimal-header, #pE-buttons {
-        display: none;
-    }
+@media screen and (max-width: 800px) {
     .pE-title-ent, .pE-title-separator, .pE-title-app-long {
         display: none;
     }
     .pE-title-app-short {
         display: inline;
+    }
+    #pE-toggle-minimal-header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #pE-alert {
+        right: 124px;
+    }
+    #pE-buttons {
+        display: none;
     }
 
 }
