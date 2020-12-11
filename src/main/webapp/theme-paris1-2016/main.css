@@ -167,7 +167,6 @@ body {
   width: 188px;
   height: 70px;
   z-index: 1;
-  background: #fff;
   overflow: hidden;
   border-left: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -178,6 +177,7 @@ body {
 #pE-buttons.pE-menu-is-open {
   height: auto;
   z-index: 100006;
+  background: #fff;
   background-clip: padding-box;
   border-color: #C89108;
   -moz-border-radius : 0 0 5px 5px;
@@ -395,7 +395,7 @@ li.pE-accountSeparator {
     #pE-alert {
         right: 124px;
     }
-    #pE-buttons {
+    #pE-toggle-minimal-header, #pE-buttons {
         display: none;
     }
     .pE-title-ent, .pE-title-separator, .pE-title-app-long {
@@ -444,3 +444,74 @@ li.pE-accountSeparator {
 #bandeau-anonyme-title {
     display: none; /* useless when using either ProlongationENT or https://ent.univ-paris1.fr/assets/bandeau-anonyme/loader.js */
 }
+
+#pE-minimal-header.pE-is-minimal {
+    background: #c79108;
+    height: 7px;
+}
+
+#pE-minimal-header #pE-header {
+    border-bottom: 0 solid #c79108;
+}
+
+#pE-minimal-header.pE-is-minimal #pE-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100004;
+    transition: all 0.41s ease-in-out;
+    border-bottom-width: 3px;
+}
+
+.pE-is-minimal-ignore-hover #pE-header,
+.pE-is-minimal:not(:hover) #pE-header {
+    height: 0;
+    overflow: hidden;
+}
+
+#pE-header .pE-title,
+#pE-alert,
+#pE-buttons,
+#pE-photo,
+#pE-openMoreButtons,
+#pE-moreButtons {
+  transition: height 0.41s ease-in-out;
+  overflow: hidden;
+  height: 70px;
+}
+
+.pE-is-minimal:not(:hover) #pE-header .pE-title,
+.pE-is-minimal:not(:hover) #pE-alert,
+.pE-is-minimal:not(:hover) #pE-buttons,
+.pE-is-minimal:not(:hover) #pE-photo,
+.pE-is-minimal:not(:hover) #pE-openMoreButtons,
+.pE-is-minimal:not(:hover) #pE-moreButtons {
+    height: 0;
+}
+
+#pE-toggle-minimal-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+
+    width: 98px;
+    height: 35px;
+    background-color: #DDf;
+    -webkit-mask: no-repeat 50% 50%;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z'/%3E%3C/svg%3E");
+
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+.pE-is-minimal #pE-toggle-minimal-header {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath d='M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z'/%3E%3C/svg%3E");
+}
+
+#pE-toggle-minimal-header:hover {
+    background-color: #c89108;
+    opacity: 1;
+}
+  

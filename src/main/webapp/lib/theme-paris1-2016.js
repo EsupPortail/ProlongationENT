@@ -29,6 +29,38 @@
         return toggleMenu('pE-account', 'pE-photo');
     }
 
+    function set_css_variables(is_minimal) {
+        document.documentElement.style.setProperty('--pE-header-height', is_minimal ? '7px' : '80px');
+        document.documentElement.style.setProperty('--pE-header-bottom-margin', is_minimal ? '0px' : '10px');
+    }
+    function toggle_minimal_header(div, opts) {
+        var is_minimal = h.toggleClass(div, 'pE-is-minimal')
+        set_css_variables(is_minimal)
+        div.classList.toggle('pE-is-minimal-ignore-hover', is_minimal)
+        if (opts.save) pE.localStorageSet("minimal", is_minimal || '')
+
+        if (is_minimal) {
+            setTimeout(function () { div.classList.remove('pE-is-minimal-ignore-hover') }, 400) // cf CSS transition
+        }
+    }
+    function install_minimal_header(enabled) {
+        var button = document.getElementById('pE-toggle-minimal-header');
+        var div = document.getElementById('pE-minimal-header');
+        if (!button || !div) return;
+        if (enabled) {
+            button.onclick = function () { toggle_minimal_header(div, { save: true }) };
+        } else {
+            button.classList.add('pE-hide');
+        }
+        var state = pE.localStorageGet('minimal')
+        if (enabled && (args.hide_menu ? state !== '' : state === 'true')) {
+           toggle_minimal_header(div, {});
+        }
+    }
+    // must be done ASAP for applications which rely on those variables on startup (before "layout" is loaded and pE computed/displayed)
+    // (example : horde/imp)
+    set_css_variables(false);
+
     function display_alert() {
         var alerts_url = 'https://ent-test.univ-paris1.fr/alertes/';
         h.set_div_innerHTML('pE-alert-modal', '<iframe src="' + alerts_url + '"></iframe>');
@@ -226,6 +258,8 @@
 
             var buttons = document.getElementById('pE-buttons');
             if (buttons) buttons.onmousedown = log_button_click;
+
+            install_minimal_header(pE.currentApp.fname !== 'caccueil' && !document['documentMode']);
 
             if (validAlerts().length > 0) {
                 var alert = document.getElementById('pE-alert');
