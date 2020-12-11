@@ -82,7 +82,7 @@ public class LoaderJs {
     
     String get_css_with_absolute_url(HttpServletRequest request, String theme, String css_file) {
         String s = theme_file_contents(request, theme, css_file);
-        return s.replaceAll("(url\\(['\" ]*)(?!['\" ])(?!https?:|/)", "$1" + conf.prolongationENT_url + "/" + theme + "/");
+        return s.replaceAll("(url\\(['\" ]*)(?!['\" ])(?!https?:|data:|/)", "$1" + conf.prolongationENT_url + "/" + theme + "/");
     }
 
 }
