@@ -164,7 +164,9 @@
             appTitle: appTitle + (args['title_suffix'] || ''),
             topApps: topApps,
             accueilUrl: (pE.validApps["caccueil"] || pE.validApps["accueil-federation"] || {}).url,
-            photoUrl: "https://userphoto-test.univ-paris1.fr/?cas-test&ldap-test&uid=" + pE.DATA.user + (photo_version ? "&v=" + photo_version : ''),
+            photoUrl: document.location.hostname.match(/univ-paris1[.]fr$/) ? 
+                "https://userphoto-test.univ-paris1.fr/?cas-test&ldap-test&uid=" + pE.DATA.user + (photo_version ? "&v=" + photo_version : '') :
+                (args.layout_url ? args.layout_url.replace(/\/layout$/, '') : pE.CONF.esupUserApps_url) + "/proxyApp?id=userphoto&uid=" + encodeURIComponent(pE.DATA.user),
             themeUrl: themeUrl(),
             logout_url: pE.CONF.ent_logout_url,
             userDetails: pE.personAttr("displayName") || pE.personAttr("mail"),
