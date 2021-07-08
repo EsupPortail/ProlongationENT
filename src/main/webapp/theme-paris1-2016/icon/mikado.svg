@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 282.23 282.23">
+  <title>Mikado</title>
+  <path d="M141.12,0A141.12,141.12,0,1,1,0,141.11,141.11,141.11,0,0,1,141.12,0Z" style="fill: #00326e"/>
+  <g>
+    <polygon points="182.05 223.48 141.5 245.42 101.01 222.16 79.66 104.01 141.34 47.02 203.26 104.03 182.05 223.48" style="fill: #fff"/>
+    <g>
+      <circle cx="141.34" cy="99.6" r="59.86" transform="translate(-27.36 61.67) rotate(-22.5)" style="fill: #153e6d"/>
+      <path d="M141.34,42.89A56.71,56.71,0,1,1,84.64,99.6a56.77,56.77,0,0,1,56.7-56.71m0-6.3a63,63,0,1,0,63,63,63,63,0,0,0-63-63Z" style="fill: #fff"/>
+    </g>
+    <path d="M180.92,57.24a57.91,57.91,0,1,0,2.87,81.84A57.91,57.91,0,0,0,180.92,57.24Zm-32.06,45.81c-8.22-14-7.47-40.7-.48-48.41,5.84-6.45,10-6.09,14.08-5.79,3.8.27,9.24,1.65,16.46,8.39,5.87,5.49,11.93,12.12,14.76,19.58s3.28,11.2,4.54,19S198,110.59,196,118.42c-3.65,14.79-20,29.41-33.69,35.25-15.27,6.53-37.82,3.27-51.33-5.38-14.09-9-27.06-26.34-27.44-44-.19-9.11.87-19.45,4.93-28.12C91.65,69.43,93.77,66,98.93,60.71c9.16-9.34,24.83-17.86,35.68-6,7.47,8.19,7.31,34.15-1.46,48.26h0c1.16,3.39,2.8,10,3.7,13.47-.67-2.57,2.93,9.75,4.49,16.27" style="fill: #fff"/>
+    <line x1="36.04" y1="214.32" x2="245.8" y2="214.32" style="fill: #38f966;stroke: #fff;stroke-miterlimit: 10;stroke-width: 5px;opacity: 0.59"/>
+    <line x1="110.04" y1="215.32" x2="171.8" y2="215.32" style="fill: none;stroke: #00326e;stroke-miterlimit: 10;stroke-width: 8px"/>
+    <circle cx="173.81" cy="98.47" r="12.97" style="fill: #00326e;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2.5px"/>
+    <circle cx="173.81" cy="98.47" r="6.83" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2.5px"/>
+    <circle cx="173.81" cy="98.47" r="6.83" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2.5px"/>
+    <circle cx="109.81" cy="98.47" r="12.97" style="fill: #00326e;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2.5px"/>
+    <circle cx="109.81" cy="98.47" r="6.83" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2.5px"/>
+    <circle cx="109.81" cy="98.47" r="6.83" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 2.5px"/>
+  </g>
+</svg>
