@@ -62,7 +62,7 @@
     set_css_variables(false);
 
     function display_alert() {
-        var alerts_url = 'https://ent-test.univ-paris1.fr/alertes/';
+        var alerts_url = 'https://ent-test.univ-paris1.fr/alertes/#app=' + pE.currentApp.fname; // pass the current app for alerts with "showIfCurrentAppIs" attr
         h.set_div_innerHTML('pE-alert-modal', '<iframe src="' + alerts_url + '"></iframe>');
 
         window.addEventListener("message", function (event) {
