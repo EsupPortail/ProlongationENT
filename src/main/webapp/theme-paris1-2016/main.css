@@ -428,25 +428,6 @@ li.pE-accountSeparator {
     }
 }
 
-#pE-tchat {
-    border: 0;
-    width: 150px;
-    height: 30px;
-    margin-top: -7px;
-}
-#pE-tchat.fixed-tchat {
-    bottom: 0px;
-    right: 0px;
-    position: fixed;
-}
-#pE-tchat.big-tchat {
-    width: 270px;
-    height: 400px;
-    margin-top: -380px;
-    transition: 0.2s;
-    z-index: 100005;
-}
-
 #bandeau-anonyme-title {
     display: none; /* useless when using either ProlongationENT or https://ent.univ-paris1.fr/assets/bandeau-anonyme/loader.js */
 }
