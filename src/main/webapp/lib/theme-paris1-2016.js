@@ -170,6 +170,7 @@
             themeUrl: themeUrl(),
             logout_url: pE.CONF.ent_logout_url,
             userDetails: pE.personAttr("displayName") || pE.personAttr("mail"),
+            accountUrl: (pE.validApps["CCompte"] || {}).url,
             accountAnchorClass: pE.validApps["CCompte"] || pE.validApps["CCompte-pers"] || pE.validApps["CCompte-etu"] ? '' : 'pE-hide',
             pagePersoClass: pE.validApps["page-perso"] ? '' : 'pE-hide',
             impersonateClass: pE.validApps["impersonate"] || pE.canImpersonateAppIds ? '' : 'pE-hide',
