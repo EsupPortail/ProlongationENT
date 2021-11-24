@@ -131,18 +131,21 @@
             var fname = positionedApps[pos];
             if (fname) addFname(fname);
         }
-        function addFname(fname) {
+        function addFname(fname, no_favorites) {
             fname = simplifyFname(fname);
             var app = validApps[fname];
             delete validApps[fname];
             if (app) {
                 list.push(computeLink(app));
-                pos++;
-                mayAddPositionedApp();
+                if (!no_favorites) {
+                    pos++;
+                    mayAddPositionedApp();
+                }
             }
         }
+        h.simpleEach(pE.DATA.favorites || [], function (fname) { addFname(fname, true) });
         mayAddPositionedApp();
-        h.simpleEach((pE.DATA.favorites || []).concat(pE.DATA.topApps || Object.keys(pE.validApps)), addFname);
+        h.simpleEach(pE.DATA.topApps || Object.keys(pE.validApps), addFname);
         return list;
     }
  
