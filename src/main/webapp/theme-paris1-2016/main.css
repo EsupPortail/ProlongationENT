@@ -304,7 +304,7 @@ li.pE-accountSeparator {
 #pE-footer-inner .pE-footer-links {
     text-align: center;
     color: #ddd;
-    padding-top: 0.8em;
+    padding-top: 0.3em;
     padding-bottom: 1em;
 }
 #pE-footer-inner .pE-footer-links a {
@@ -324,12 +324,11 @@ li.pE-accountSeparator {
 }
 
 #pE-footer-inner .pE-portalLogo {
-    padding-top: 1em;
+    padding-top: 0.8em;
     text-align: center;
 }
 .pE-portalLogo img {
-    width: 200px;
-    height: 64px;
+    width: 240px;
     vertical-align: initial !important;
 }
 
