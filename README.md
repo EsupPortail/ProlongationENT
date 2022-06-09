@@ -109,6 +109,18 @@ Substitute "s|<body>|<body> <script>window.prolongation_ENT_args = { current: 'x
 
 NB: for the full list, see ```interface prolongation_ENT_args``` in ```lib/defs.d.ts```
 
+### Suggestions to avoid flash when loading bandeau on page
+
+The best is:
+* put `loader.js` in the page only if the user is logged in the application (easy if the application is always connected)
+* you can then use `is_logged: true`
+* avoid `extra_css`: put `<style>` or `<link type="text/css" ...>` only if the user is logged in the application
+* put `loader.js` immediatly after `<body>`: if the bandeau is cached (in localStorage, the default behaviour), it can be displayed immediatly before anything else
+
+If you can't add `loader.js` only if the user is logged in the application:
+* put loader.js after the logout HTML elt
+* use `logout` or `is_logged`
+
 
 
 Theme
