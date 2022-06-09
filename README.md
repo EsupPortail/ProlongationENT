@@ -97,8 +97,12 @@ Substitute "s|<body>|<body> <script>window.prolongation_ENT_args = { current: 'x
 * hide_menu
 * logout: CSS selector used to find the logout button. bandeau's logout will trigger a click on app's logout button
 * logout_href: url to go to for logout (sometimes easier to use than a CSS selector)
-* login
-* is_logged
+* login: CSS selector used to find the login button. Used to detect if bandeau must be displayed. See also `is_logged` below.
+* is_logged: 
+  * CSS selector or boolean used to detect if bandeau must be displayed
+  * used when option `login` is unset
+  * default value is option `logout` value
+  * if `login`/`logout`/`is_logged` are all unset, bandeau will always by displayed
 * ping_to_increase_session_timeout
 * quirks
 * onload

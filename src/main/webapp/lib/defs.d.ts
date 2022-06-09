@@ -52,7 +52,8 @@ interface TEMPLATES {
   footer: string;
 }
 
-type logout_elt = string | { selector: string } | { fn: (find: (selector: string) => Element) => Element }
+// either a CSS selector (explicitly or not) or a function returning a DOM elt
+type dom_elt = string | { selector: string } | { fn: (find: (selector: string) => Element) => Element }
 
 interface prolongation_ENT_args {
   quirks: ('window-resize')[];
@@ -61,10 +62,10 @@ interface prolongation_ENT_args {
   div_id: string;
   div_is_uid: boolean;
   extra_css: string;
-  logout: logout_elt;
+  logout: dom_elt;
   logout_href: string;
-  login: boolean;
-  is_logged: logout_elt | boolean;
+  login: dom_elt | boolean;
+  is_logged: dom_elt | boolean;
 
   hide_menu: boolean;
   no_titlebar: boolean;
