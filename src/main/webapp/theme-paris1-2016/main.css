@@ -127,6 +127,7 @@ body {
   vertical-align: top !important;
   text-indent: 0 !important;
   background: none !important;
+  display: inline;
 }
 #pE-header .pE-button, #pE-header .pE-button a {
     color: #666 !important;
@@ -186,16 +187,16 @@ body {
   -webkit-border-bottom-right-radius : 5px;
 }
 
-#pE-openMoreButtons.pE-menu-is-open span {
+#pE-header #pE-openMoreButtons.pE-menu-is-open span {
     display: none;
 }
-#pE-openMoreButtons .if-open {
+#pE-header #pE-openMoreButtons .if-open {
     display: none;
 }
-#pE-openMoreButtons.pE-menu-is-open .if-open {
+#pE-header #pE-openMoreButtons.pE-menu-is-open .if-open {
     display: inline;
 }
-#pE-openMoreButtons.pE-menu-is-open .if-closed {
+#pE-header #pE-openMoreButtons.pE-menu-is-open .if-closed {
     display: none;
 }
 
