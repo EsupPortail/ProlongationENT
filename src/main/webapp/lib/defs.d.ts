@@ -9,6 +9,7 @@ interface app {
   hashelp: boolean;
   forbidden: boolean;
   hide: boolean;
+  openInNewTab: boolean;
 }
 interface menuEntry {
   title: string;
