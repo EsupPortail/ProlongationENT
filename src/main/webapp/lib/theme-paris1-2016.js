@@ -112,7 +112,7 @@
 
     // in our Agimus, we simplify the fnames, we must handle this
     function simplifyFname(k) {
-        k = k.replace(/^C([A-Z][a-z])/, "$1").replace(/-(etu|ens|gest|pers|teacher|default)$/, '');
+        k = k.replace(/^C([A-Z][a-z])/, "$1").replace(/-(etu|ens|gest|pers|teacher|staff|default)$/, '');
         return k.toLowerCase();
     }
     
