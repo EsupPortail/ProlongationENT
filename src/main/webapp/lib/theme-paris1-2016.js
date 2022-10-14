@@ -160,7 +160,7 @@
         // NB: to simplify, do not use browser cache for the photo if impersonated
         var photo_version = !pE.DATA.realUserId && pE.personAttr('modifyTimestamp');
 
-        var appTitle = app.url ? "<a href='" + app.url + "'><span class='pE-title-app-short'>" + 
+        var appTitle = app.url ? "<a href='" + (args.currentApp_url || app.url) + "'><span class='pE-title-app-short'>" + 
            h.escapeQuotes(app.shortText || app.text || app.title) + "</span><h1 class='pE-title-app-long'>" +
            h.escapeQuotes(app.title) + "</h1></a>" : "Application non autorisée";
         return h.template(pE.TEMPLATES.header, {

@@ -60,6 +60,7 @@ interface prolongation_ENT_args {
   quirks: ('window-resize')[];
   current: string;
   currentAppIds: string[];
+  currentApp_url: string; // useful to force the link in title
   div_id: string;
   div_is_uid: boolean;
   extra_css: string;
