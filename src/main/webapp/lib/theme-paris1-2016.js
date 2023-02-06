@@ -121,8 +121,10 @@
         var validApps = {};
         var positionedApps = [];
         h.simpleEachObject(pE.validApps, function (k, app) { 
-            validApps[simplifyFname(k)] = app;
-            if (app.position) positionedApps[app.position] = k;
+            if (app.menuEntryTitle !== "__hidden__") {
+                validApps[simplifyFname(k)] = app;
+                if (app.position) positionedApps[app.position] = k;
+            }
         });
 
         var list = [];
