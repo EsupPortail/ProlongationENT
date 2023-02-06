@@ -26,6 +26,7 @@ function computeAllApps() {
     var m = {};
     h.simpleEach(DATA.layout.folders, function (tab) {
         h.simpleEach(tab.portlets, function (app) {
+            app.menuEntryTitle = tab.title
             m[app.fname] = app;
         });
     });
