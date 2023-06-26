@@ -7,6 +7,7 @@ interface app {
   url: string;
   position: number;
   hashelp: boolean;
+  helpUrl: string; // useful for PDF files. Implies hashelp
   forbidden: boolean;
   hide: boolean;
   openInNewTab: boolean;

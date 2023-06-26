@@ -182,12 +182,17 @@
         });
     }
 
+    function innerHelp(app) {
+        return "<span>Aide " + (app.shortText || app.text || app.title) + "</span> <img src='" + themeUrl() + "/help.svg'>";
+    }
+
     function computeHelp(app) {
-        if (app && app.hashelp) {
+        if (app && app.helpUrl) {
+            return "<a href='" + app.helpUrl + "' target='_blank' title=\"Voir l'aide du canal\">" + innerHelp(app) + "</a>";
+        } else if (app && app.hashelp) {
             var href = "https://ent.univ-paris1.fr/assets/aide/canal/" + app.fname + ".html";
             var onclick = "window.open('','form_help','toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=yes,scrollbars=yes,copyhistory=no,alwaysRaised,width=600,height=400')";
-            var inner = "<span>Aide " + (app.shortText || app.text || app.title) + "</span> <img src='" + themeUrl() + "/help.svg'>";
-            return "<a href='" + href + "' onclick=\"" + onclick + "\" target='form_help' title=\"Voir l'aide du canal\">" + inner + "</a>";
+            return "<a href='" + href + "' onclick=\"" + onclick + "\" target='form_help' title=\"Voir l'aide du canal\">" + innerHelp(app) + "</a>";
         } else {
             return '';
         }
