@@ -44,7 +44,7 @@ body {
   width: 42px;
   height: 34px;
   display: inline-block;
-  background-image: url("logo.png");
+  background-image: url("logo.svg");
   background-size: 42px;
 }
 #pE-header .pE-title {
