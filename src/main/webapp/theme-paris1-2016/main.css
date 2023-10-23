@@ -66,10 +66,10 @@ body {
   margin-right: 0.3rem;
 }
 #pE-header .pE-title-ent {
-  color: #9F6C07 !important;
+  color: #DD8B17 !important;
 }
 #pE-header .pE-title-app, #pE-header .pE-title-app a span, #pE-header .pE-title-app a h1 {
-  color: #00326E !important;
+  color: #00386E !important;
 }
 .pE-title-app-long {
   display: inline;
@@ -157,7 +157,7 @@ body {
   height: 0; 
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid #C89108;
+  border-top: 9px solid #ED9B27;
   margin-left: 39px;
 }
 
@@ -166,7 +166,6 @@ body {
 
 #pE-buttons {   
   width: 188px;
-  height: 70px;
   z-index: 1;
   overflow: hidden;
   border-left: 2px solid transparent;
@@ -180,7 +179,7 @@ body {
   z-index: 100006;
   background: #fff;
   background-clip: padding-box;
-  border-color: #C89108;
+  border-color: #ED9B27;
   -moz-border-radius : 0 0 5px 5px;
   border-radius : 0 0 5px 5px;
   -webkit-border-bottom-left-radius : 5px;
@@ -225,7 +224,7 @@ body {
     padding-top: 5px;
 
     z-index: 100006;
-    border: 2px solid #C89108;
+    border: 2px solid #ED9B27;
     border-top: 0px;
     -moz-border-radius : 5px 0 5px 5px;
     border-radius : 0 0 5px 5px;
@@ -241,7 +240,7 @@ body {
     padding: 0;
 }
 #pE-account a, #pE-account a span {
-  color: #00326E !important;
+  color: #00386E !important;
   font-weight: initial !important;
   font-size: 11px !important;
 }
@@ -267,7 +266,7 @@ li.pE-accountSeparator {
     padding-top: 1em;
 }
 .pE-accountLogout {
-    background-color: #C89108 !important;
+    background-color: #ED9B27 !important;
     padding: 0 !important;
     min-width: 173px;
 }
@@ -299,7 +298,7 @@ li.pE-accountSeparator {
     clear: both;
 }
 #pE-footer-inner-ent {
-    background-color: #00326E;
+    background-color: #00386E;
     height: 130px;
 }
 #pE-footer-inner .pE-footer-links {
@@ -433,12 +432,12 @@ li.pE-accountSeparator {
 }
 
 #pE-minimal-header.pE-is-minimal {
-    background: #c79108;
+    background: #ED9B27;
     height: 7px;
 }
 
 #pE-minimal-header #pE-header {
-    border-bottom: 0 solid #c79108;
+    border-bottom: 0 solid #ED9B27;
 }
 
 #pE-minimal-header.pE-is-minimal #pE-header {
@@ -465,7 +464,7 @@ li.pE-accountSeparator {
 #pE-moreButtons {
   transition: height 0.41s ease-in-out;
   overflow: hidden;
-  height: 70px;
+  height: 73px;
 }
 
 .pE-is-minimal:not(:hover) #pE-header .pE-title,
@@ -498,7 +497,7 @@ li.pE-accountSeparator {
 }
 
 #pE-toggle-minimal-header:hover {
-    background-color: #c89108;
+    background-color: #ED9B27;
     opacity: 1;
 }
   
