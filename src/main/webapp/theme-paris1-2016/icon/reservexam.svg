@@ -15,9 +15,9 @@
 	</g>
 	<g display="inline">
 		<g>
-			<path fill="#C89209" d="M-391.099,1337.676V1273.6h64.076v64.076H-391.099z"/>
-			<path fill="#C89209" d="M-292.687,1337.676V1273.6h64.076v64.076H-292.687z"/>
-			<path fill="#C89209" d="M-391.099,1429.676V1365.6h64.076v64.076H-391.099z"/>
+			<path fill="#ED9B27" d="M-391.099,1337.676V1273.6h64.076v64.076H-391.099z"/>
+			<path fill="#ED9B27" d="M-292.687,1337.676V1273.6h64.076v64.076H-292.687z"/>
+			<path fill="#ED9B27" d="M-391.099,1429.676V1365.6h64.076v64.076H-391.099z"/>
 		</g>
 	</g>
 	<g display="inline">
@@ -40,9 +40,9 @@
 <g id="B_bis">
 	<ellipse opacity="0.83" fill="#FFFFFF" cx="-311.745" cy="1350.154" rx="91.335" ry="90.709"/>
 	
-		<line fill="#C89209" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-312.399" y1="1213.75" x2="-312.399" y2="1254.628"/>
+		<line fill="#ED9B27" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-312.399" y1="1213.75" x2="-312.399" y2="1254.628"/>
 	
-		<line fill="#C89209" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-450.543" y1="1350.208" x2="-405.783" y2="1350.208"/>
+		<line fill="#ED9B27" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-450.543" y1="1350.208" x2="-405.783" y2="1350.208"/>
 	<g opacity="0.6">
 		<path fill="#FFFFFF" d="M-206.525,1288.459c0,4.8-3.45,8.7-8.399,8.7c-3.601,0-8.25-2.25-8.25-8.7c0-6.3,5.55-8.699,8.25-8.699
 			C-208.476,1279.76-206.525,1285.459-206.525,1288.459z"/>
@@ -247,9 +247,9 @@
 			C-297.417,1304.567-297.725,1304.62-297.848,1304.692z"/>
 	</g>
 	
-		<line fill="#C89209" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-215.65" y1="1350.208" x2="-174.772" y2="1350.208"/>
+		<line fill="#ED9B27" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-215.65" y1="1350.208" x2="-174.772" y2="1350.208"/>
 	
-		<line fill="#C89209" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-312.399" y1="1446.75" x2="-312.399" y2="1487.628"/>
+		<line fill="#ED9B27" stroke="#FFFFFF" stroke-width="7" stroke-miterlimit="10" x1="-312.399" y1="1446.75" x2="-312.399" y2="1487.628"/>
 </g>
 <g id="C">
 </g>

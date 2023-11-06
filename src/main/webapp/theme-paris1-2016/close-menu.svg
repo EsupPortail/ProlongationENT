@@ -8,7 +8,7 @@
 	<rect x="116.272" y="-356.429" display="inline" fill="#FFFFFF" width="4471.75" height="5688"/>
 </g>
 <g id="fond">
-	<circle display="none" fill="#C89108" cx="593.718" cy="1652.405" r="141.116"/>
+	<circle display="none" fill="#ED9B27" cx="593.718" cy="1652.405" r="141.116"/>
 </g>
 <g id="A" display="none">
 	<g display="inline">
@@ -33,9 +33,9 @@
 	<circle fill="#FFFFFF" cx="593.718" cy="1652.405" r="141.116"/>
 	<g>
 		<g>
-			<path fill="#C89108" d="M533.597,1598.2h122.042v16.336H533.597V1598.2z"/>
-			<path fill="#C89108" d="M533.597,1641.2h122.042v16.336H533.597V1641.2z"/>
-			<path fill="#C89108" d="M533.597,1684.2h122.042v16.336H533.597V1684.2z"/>
+			<path fill="#ED9B27" d="M533.597,1598.2h122.042v16.336H533.597V1598.2z"/>
+			<path fill="#ED9B27" d="M533.597,1641.2h122.042v16.336H533.597V1641.2z"/>
+			<path fill="#ED9B27" d="M533.597,1684.2h122.042v16.336H533.597V1684.2z"/>
 		</g>
 	</g>
 </g>

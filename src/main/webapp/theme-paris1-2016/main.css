@@ -324,11 +324,11 @@ li.pE-accountSeparator {
 }
 
 #pE-footer-inner .pE-portalLogo {
-    padding-top: 0.8em;
+    padding: 0.8rem 0 0.4rem;
     text-align: center;
 }
 .pE-portalLogo img {
-    width: 240px;
+    width: 220px;
     vertical-align: initial !important;
 }
 

@@ -51,9 +51,9 @@
 		<line fill="#FFFFFF" x1="-538.311" y1="2043.256" x2="-696.445" y2="2043.256"/>
 		<g>
 			
-				<line fill="none" stroke="#C89209" stroke-width="5" stroke-miterlimit="10" x1="-538.311" y1="2043.256" x2="-652.148" y2="2043.256"/>
+				<line fill="none" stroke="#ED9B27" stroke-width="5" stroke-miterlimit="10" x1="-538.311" y1="2043.256" x2="-652.148" y2="2043.256"/>
 			<g>
-				<polygon fill="#C89209" points="-642.241,2028.73 -696.445,2043.256 -642.241,2057.782 				"/>
+				<polygon fill="#ED9B27" points="-642.241,2028.73 -696.445,2043.256 -642.241,2057.782 				"/>
 			</g>
 		</g>
 	</g>

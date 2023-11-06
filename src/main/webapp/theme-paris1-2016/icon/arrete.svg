@@ -6,8 +6,8 @@
       }
 
       .cls-2 {
-        fill: #c89108;
-        stroke: #c89108;
+        fill: #ED9B27;
+        stroke: #ED9B27;
         stroke-miterlimit: 10;
         stroke-width: 3px;
       }
