@@ -138,6 +138,7 @@ function installFooter() {
     if (!elt) {
         elt = document.createElement("div");
         elt.setAttribute("id", id);
+        elt.setAttribute("role", "contentinfo")
         document.body.appendChild(elt);
     }
     elt.innerHTML = pE.callPlugins("computeFooter") || pE.TEMPLATES.footer;
@@ -162,6 +163,7 @@ var installBandeau = pE.redisplay = function () {
     var bandeau_html = pE.callPlugins("computeHeader");
     h.onIdOrBody(bandeau_div_id(), function () {
         h.set_div_innerHTML(bandeau_div_id(), bandeau_html);
+        document.getElementById(bandeau_div_id()).setAttribute("role", "banner")
         
         pE.callPlugins('post_header_add');
         
