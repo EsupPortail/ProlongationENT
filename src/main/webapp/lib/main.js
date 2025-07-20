@@ -1,6 +1,6 @@
 pE.main = function (DATA, PARAMS, fromLocalStorage) {
 
-if (!DATA.user) {
+if (!DATA.user || args.mfa && !DATA.MFA) {
     pE.callPlugins('onNotLogged');
     if (args.onNotLogged)
         args.onNotLogged(pE);

@@ -75,6 +75,7 @@ interface prolongation_ENT_args {
   no_footer: boolean;
   no_sticky_footer: boolean;
 
+  mfa: boolean,
   delegateAuth: boolean;
     
   onNotLogged(pE: prolongation_ENT);
