@@ -202,7 +202,7 @@
         var app = pE.currentApp;
         return h.template(pE.TEMPLATES.footer, {
             themeUrl: themeUrl(),
-            helpUrl: (pE.validApps['gsn-etu'] || { url: "https://ent.univ-paris1.fr/gsn-pers" }).url,
+            helpUrl: (pE.validApps['gsn-pers'] || { url: "https://ent.univ-paris1.fr/gsn" }).url,
             appHelp: computeHelp(app),
         });
     }
