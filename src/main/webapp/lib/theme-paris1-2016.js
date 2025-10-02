@@ -105,7 +105,7 @@
             url = pE.relogUrl(app);
         }
         var a = "<a title='" + h.escapeQuotes(app.description || app.title) + "' href='" + url + "' data-fname='" + app.fname + "'" + (app.openInNewTab ? " target='_blank'" : '') + " tabindex='-1'>" +
-            "<img class='icon' alt='' src='" + themeUrl() + "/icon/" + app.fname + ".svg'><br>" +
+            "<img class='icon' alt='' src='" + themeUrl() + "/icon/" + (app.logo || app.fname) + ".svg'><br>" +
           h.escapeQuotes(app.shortText || app.text || app.title) + "</a>";
         return "<div class='" + classes.join(' ') + "'>" + a + "</div>";
     }
