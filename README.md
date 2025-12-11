@@ -36,7 +36,7 @@ Configuration
 -------------
 
 * create ```src/main/webapp/WEB-INF/config.json``` similar to ```config-example.json```
-* deploy using ```mvn package``` (or modify ```build.properties``` and use ```ant deploy```)
+* deploy using ```mvn package```
 * test the result with ```https://ent.univ.fr/ProlongationENT/test/#/test/layout.jsonp``` then ```https://ent.univ.fr/ProlongationENT/test/```
 
 ### with EsupUserApps web service
