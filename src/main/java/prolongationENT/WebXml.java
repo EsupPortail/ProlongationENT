@@ -1,6 +1,6 @@
 package prolongationENT;
 
-import javax.servlet.*;
+import jakarta.servlet.*;
 
 import static prolongationENT.Utils.*;
 
