@@ -152,7 +152,7 @@ interface helpers {
   loadCSS(url: string, media: string);
   unloadCSS(url: string);
   addCSS(css: string);
-  loadScript(url: string, params?: string[]);
+  loadScript(url: string, params?: string[], opts?: { onload: () => void });
 }
 
 interface Window {

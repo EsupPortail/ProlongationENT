@@ -195,12 +195,13 @@ addCSS: function(css) {
     return elt;
 },
 
-loadScript: function(url, params) {
+loadScript: function(url, params, opts) {
     var elt = document.createElement("script");
     elt.setAttribute("type", "text/javascript");
     elt.setAttribute("src", url + (params && params.length ? "?" + params.join('&') : ''));
     elt.setAttribute("async", "async");
     elt.setAttribute("charset", "utf-8"); // workaround IE ignoring Content-Type
+    if (opts && opts.onload) elt.onload = opts.onload
     h.head().appendChild(elt);
 },
 
