@@ -34,11 +34,13 @@ interface PARAMS {
 interface CONF {
   theme: string;
   esupUserApps_url: string;
+  esupUserApps_url_other_domain?: string;
   prolongationENT_url: string;
   uportal_base_url: string;
   cas_login_url: string;
   ent_logout_url: string;
   layout_url: string;
+  layout_url_other_domain?: string;
   cas_impersonate: { cookie_name: string, cookie_domain: string };
   disableLocalStorage: boolean;
   time_before_checking_browser_cache_is_up_to_date: number;

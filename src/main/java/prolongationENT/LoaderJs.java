@@ -51,7 +51,8 @@ public class LoaderJs {
         );
 
         Map<String, Object> js_conf =
-            objectFieldsToMap(conf, "prolongationENT_url", "esupUserApps_url", "cas_login_url", "uportal_base_url", "layout_url",
+            objectFieldsToMap(conf, "prolongationENT_url", "esupUserApps_url", "esupUserApps_url_other_domain", 
+                              "cas_login_url", "uportal_base_url", "layout_url", "layout_url_other_domain",
                               "cas_impersonate", "disableLocalStorage", 
                               "time_before_checking_browser_cache_is_up_to_date", "ent_logout_url");
         js_conf.put("theme", theme);

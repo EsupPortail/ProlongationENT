@@ -11,12 +11,29 @@ var loadBandeauJs = function(params) {
     if (pE.PARAMS) params.push('if_none_match=' + pE.PARAMS.hash); // pE.PARAMS is null when called from loader.js
     if (pE.loadTime) params.push("time=" + pE.loadTime);
     params.push("callback=window.prolongation_ENT.main");
+
     h.loadScript(args.layout_url || pE.CONF.layout_url, params);
 };
+
+function url_to_domain(url) {
+    try {
+        return new URL(url).hostname.match(/([^.]*[.][^.]*)$/)?.[1]
+    } catch {
+        return undefined
+    }
+}
 
 function loader() {
     if (pE.maybe_loaded) return; 
     if (parent !== window) return; // never in iframe
+
+    if (pE.CONF.esupUserApps_url_other_domain) {
+        if (url_to_domain(document.location) === url_to_domain(pE.CONF.esupUserApps_url_other_domain)) {
+            console.log("PRI forcing pE.CONF.esupUserApps_url other_domain")
+            pE.CONF.esupUserApps_url = pE.CONF.esupUserApps_url_other_domain
+            pE.CONF.layout_url = pE.CONF.layout_url_other_domain
+        }
+    }
 
     pE.maybe_loaded = true;
     
